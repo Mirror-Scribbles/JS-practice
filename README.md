@@ -1827,3 +1827,33 @@ console.log(massLessThan50)
 // console.log(person1);
 // console.log(person2);
 
+
+
+
+
+// parametros rest 
+
+
+
+function suma(x, y, ...Z){
+let result = x + y;
+
+Z.forEach(function(forZ){
+result += forZ
+});
+return result
+}
+
+console.log(suma(1,2,4,8,9,70,5))
+
+const sumi = ((x, y, ...Z) => {
+let result = x + y;
+Z.forEach((forXyZ)=>{
+    result *= forXyZ;
+});
+return result
+})
+
+console.log(sumi(3,5, 6,7,3,4,6,8,9));
+
+
