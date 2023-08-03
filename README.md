@@ -1771,4 +1771,59 @@ const  tallerThan200 = characters.some(characters => characters.height > 200)
 console.log(tallerThan200);
 // Is there at least one character that has mass less than 50?
 const massLessThan50 = characters.some(characters => characters.mass < 50)
-console.log(massLessThan50)
+console.log(massLessThan50)  
+
+
+/ Spread operator
+
+// practica:
+
+// const arr = [12,34, 68, 8, 5]
+
+// const ne = [...arr]
+// console.log(ne);
+
+
+// const person1 = [
+//    {
+//     name: "camilo",
+//     email: "camilo@gmail.com",
+//     phone: "12345667"
+//     },
+//     {
+//      name: "luisa",
+//      email: "luisa@gmail.com",
+//      phone: "1068963843"
+//     },
+//     {
+//      name: "kris",
+//      email: "kris@gmail.com",
+//      phone: "40786573451"
+//      }
+// ]
+
+
+// const person2 = [
+//     {
+//     name: "luis",
+//     email: "luis@gmail.com",
+//     phone: "0786865446"
+//     },
+//     {
+//      name: "maicol",
+//      email: "maicol@gmail.com",
+//      phone: "1804567843"
+//     },
+//     {
+//      name: "jhon",
+//      email: "jhon@gmail.com",
+//      phone: "4009773451"
+//      }
+// ]
+
+
+// const unit = [...person1, ...person2];
+// console.log(unit);
+// console.log(person1);
+// console.log(person2);
+
