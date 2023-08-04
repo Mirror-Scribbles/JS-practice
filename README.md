@@ -1831,8 +1831,8 @@ console.log(massLessThan50)
 
 
 
-// parametros rest 
 
+// parametros rest / Rest parameters
 
 
 function suma(x, y, ...Z){
@@ -1856,4 +1856,19 @@ return result
 
 console.log(sumi(3,5, 6,7,3,4,6,8,9));
 
+// rest examples
+
+const sum = (...data) => data.reduce((acc, cur) => acc + cur)
+
+console.log(sum(4,5,7,9,0,));
+
+
+const mult = (...more) => more.reduce((acc, cur) => acc *= cur)
+console.log(mult(3,65,6776,56,45))
+
+const div = (...ml) => ml.reduce((acc, cur) => acc /=cur );
+console.log(div(898956,6,9,6))
+
+const min = (...mn) => mn.reduce((acc, cur) => acc -= cur);
+console.log(min(78, 89, 75))
 
