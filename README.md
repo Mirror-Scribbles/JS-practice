@@ -1897,5 +1897,51 @@ console.log(min(78, 89, 75))
 // console.log(arrs);
 
 
+                         // libreria Math
+                        //  https://www.youtube.com/watch?v=BGXwssmxGuY
+
+//  https://lenguajejs.com/javascript/number/objeto-math/
+
+// console.log(Math); 
+// console.log(Math.PI);
+// // Math.abs; devuelve el valor apsoluto de un numero, sin considerar si es positivo o negativo
+// console.log(Math.abs(-5));
+// //  Math.ceil;redondea el numero al numero entero posterior inmediato, o sube el numero al siguiente valor.
+// console.log(Math.ceil(7.6));
+// // Math.floor: redondead el al numero menor, baja el balor del numero en otras palabras, 
+// console.log(Math.floor(7.6));
+// // Math.round; redondead al mas sercano inmediato a diferencia del ceil o floor
+// console.log(Math.round((7.6)));
+// console.log(Math.round((7.3)));
+// // Math.sqrt: nos ayuda a sacar la raiz cuadrada de un numero. 
+// console.log(Math.sqrt(76));
+// // Math.pow; con esto podemos elevear potencias, el primero numero es la base y el seguendo es el exponente. 
+// console.log(Math.pow(2, 5));
+// // Math.sign ; nos indica si el numeor es negativo positivo o cero, si el numeor es negativo devuelve -0 si es cero devuelve 0 y si es un numero entero devuelve 1
+// console.log(Math.sign(-7.8));
+// console.log(Math.sign(7.8));
+// console.log(Math.sign(0.8));
+// console.log(Math.sign(-0.34));
+// console.log(Math.sign(-0));
+// // Math.random; me va a devolver como su numbre lo indica un numero o un valor aleatorio comprendido entre 0 y 1
+// console.log(Math.random());
+
+// // Ejemplo con ramdon digamos que hay mil personas en una rifa como harias para jugar y ver quien gana? 
+// console.log(Math.round(Math.random() * 1000));
+// //  otros ejemplos con Math.random
+
+// const X = (Math.ceil(Math.random()*4));
+// const y = (Math.floor(Math.random()*4));
+// const z = (Math.round(Math.random()*4));
+
+// console.log(X);
+
+
+//  name: "camilo",
+// let texto ="Hola soy tu amigo Mirror";
+// let texto ="Hola soy tu amigo Mirror";
+// const speak = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+
+// speak(texto);
 
 
