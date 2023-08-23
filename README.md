@@ -2084,4 +2084,38 @@ console.log(min(78, 89, 75))
 
 // console.log($inputClass);
 
+// DOM: Estilos y Variables CSS
+
+
+
+const $linkDOM = document.querySelector(".link-dom")
+
+
+$linkDOM.style.setProperty("text-decoration", "none")
+
+$linkDOM.style.setProperty("background-color", "red")
+
+$linkDOM.style.setProperty("display", "block")
+
+// tambien podemos haceder con la notacion del punto y darle propiedades
+
+$linkDOM.style.width = "50%";
+$linkDOM.style.textAlign = "center";
+$linkDOM.style.marginLeft = "auto";
+$linkDOM.style.marginRight ="auto";
+$linkDOM.style.padding =".1em"
+$linkDOM.style.borderRadius = ".5rem"
+
+const $body = document.body;
+
+$body.style.backgroundColor = "yellow";
+
+const $eclypse = document.querySelector(".eclypse")
+
+$eclypse.classList.add("casio", "runner")
+$eclypse.classList.remove("eclypse")
+$eclypse.style.backgroundColor = ""
+
+
+
 
