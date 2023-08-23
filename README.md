@@ -1944,4 +1944,67 @@ console.log(min(78, 89, 75))
 
 // speak(texto);
 
+// Dom
+
+
+// :nos devuelve todos los elementos que pon nombrer tengan lo que esta en el parentesis
+
+
+//document.getElementsByClassName()) : Busca elementos con la clase class.	Devuelve []  nos permite buscar elementos con el numbre de clase
+
+//getElementsByName()) Busca elementos con el atributo name a value.	Devuelve []. nos devuelve la etiqueta por el numbre,  es muy util en fomrmularios
+
+// .getElementsByTagName(tag)	Busca etiquetas HTML tag.	Devuelve [].
+
+// Todos los anteriores an sido reemplazados por otras nuevos elementos los cuales son;
+// Dom practice 
+
+// con las soglas document. podriamso aceder a cualquier nodo del documento HTML
+// console.log(document)
+
+// console.log(document.head);
+// console.log(document.body);
+// console.log(document.documentElement);
+
+// // console.log(Document.links); cactura todos los links de una pagina;
+
+// // console.log(document.links)
+
+// // console.log(document.images) nos muestra todas las imagenes
+
+// console.log(document.styleSheets)
+
+
+
+// DOM: Nodos, Elementos y Selectores practica
+
+
+// Métodos tradicionales
+
+// Los métodos más clásicos y tradicionales para realizar búsquedas de elementos en el DOM son más sencillos, pero menos potentes. Si lo que buscas es un elemento específico, lo mejor sería utilizar el método getElementById(). En caso contrario, utilizaremos alguno de los otros tres métodos, que nos devuelven siempre un : 
+
+
+// console.log(document.getElementsByTagName()) 
+
+// Estos son los 3 métodos tradicionales de Javascript para manipular el DOM. Se denominan tradicionales porque son los que existen en Javascript desde versiones más antiguas.
+
+// getElementById()
+
+// El primer método, .getElementById(id) busca un elemento HTML con el id especificado. En principio, un documento HTML bien construído no debería tener más de un elemento con el mismo id, por lo tanto, este método devolverá siempre un solo elemento:
+
+
+// En el caso de no encontrar el elemento indicado, devolverá null.
+
+
+// Métodos modernos
+
+// querySelector() : Busca el primer elemento que coincide con el selector CSS sel.	El método .querySelector() devuelve el primer elemento que encuentra que encaja con el selector CSS suministrado por parámetro. Siempre devuelve un solo elemento y en caso de no coincidir con ninguno, devuelve : Lo interesante de este método, es que al permitir suministrarle un selector CSS básico o incluso un selector CSS avanzado, se vuelve un sistema mucho más potente.
+
+
+
+// console.log(querySelectorAll()) : 	Busca todos los elementos que coinciden con el selector CSS sel.	Devuelve []. 
+
+// querySelectorAll()
+// Por otro lado, el método .querySelectorAll() realiza una búsqueda de elementos en el DOM, sólo que como podremos intuir por ese All(), devuelve un  con todos los elementos que coinciden con el  CSS.
+
 
