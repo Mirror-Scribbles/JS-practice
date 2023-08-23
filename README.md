@@ -2007,4 +2007,81 @@ console.log(min(78, 89, 75))
 // querySelectorAll()
 // Por otro lado, el método .querySelectorAll() realiza una búsqueda de elementos en el DOM, sólo que como podremos intuir por ese All(), devuelve un  con todos los elementos que coinciden con el  CSS.
 
+/ DOM: Nodos, Elementos y Selectores practice 
+
+
+
+// como aceder la etiqueta lang seri :
+// console.log(document.documentElement.lang);
+
+// // para una forma mas concreta de pedir o aceder a los elementos del dom se hacer con .getAttriute(value)
+// console.log(document.querySelector(".link-dom").href);
+// console.log(document.querySelector(".link-dom").getAttribute("href"));
+
+// // como cambiar los numbre de las etiquetas html? lo hacemos de esta forma
+// // document.documentElement.lang = "es";  y despies del igual entre comillas pasamos el nuevo valor 
+// document.documentElement.lang = "es"; 
+// console.log(document.documentElement.lang);
+
+
+// // Ahora tenemos una mejor forma de hacer esto la cuel seria:
+
+// // setAttribute(name of the attribute, new value);
+
+// console.log(document.documentElement.setAttribute("lang", "en"));
+
+
+
+// Ahora comenzemos a guardar elementos en variables y constantes
+// manipulacion de un link
+
+// const $linkDOM = document.querySelector(".link-dom");
+// $linkDOM.setAttribute("target", "_blank");
+// $linkDOM.setAttribute("rel", "noopener");
+// $linkDOM.setAttribute("href", "https://www.youtube.com/watch?v=l6npGZa_vgc");
+
+// // validar si un an atrivuto existe en el elemento con hasAttribute.
+// // validar atributos
+// console.log($linkDOM.hasAttribute("rel"));
+
+
+// // remover atributos; 
+
+// $linkDOM.removeAttribute("rel");
+// console.log($linkDOM.hasAttribute("rel"));
+
+
+// otros ejemplos
+
+// //1-Encontrar un elemento por su ID y vincularle una clase
+// var div = document.querySelector("#div1");
+// console.log(div); // imprimirlo
+// div.classList.add("blue"); // Vincularle la clase
+
+// //2-Encontrar el primer elemento que posea una clase x
+// var div = document.querySelector(".miClase");
+// console.log(div); //Imprimirlo
+
+// //3-Encontrar todos los elemenos que poseen la misma clase
+// var div = document.querySelectorAll(".miClase");
+// console.log(div);// imprimirlos
+
+// practica de añadir, crear u verificar aatributos o etiquetas, 
+
+// const $classList = document.querySelector(".list-1");
+// console.log($classList);
+
+// const $newList = document.querySelectorAll(".list-item");
+// console.log($newList);
+// $newList.setAttribute
+
+// midificar el numbre de los li
+// https://www.youtube.com/watch?v=yc-AeIdRVEI
+
+// const $inputClass = document.querySelector(".link-dom");
+
+// $inputClass.setAttribute("class", "My set")
+
+// console.log($inputClass);
+
 
