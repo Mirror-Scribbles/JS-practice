@@ -1870,5 +1870,32 @@ const div = (...ml) => ml.reduce((acc, cur) => acc /=cur );
 console.log(div(898956,6,9,6))
 
 const min = (...mn) => mn.reduce((acc, cur) => acc -= cur);
-console.log(min(78, 89, 75))
+console.log(min(78, 89, 75)) 
+
+// Copy arrays
+
+// let numer1 = [1,4, 67, 89, 90]
+
+// let numbers2 = [12, 45, 65, 76, ...numer1]
+
+// console.log(numbers2)
+
+
+// let num1 = [13, 23, 45, 56, 67, 78, 89, 90] 
+
+// let nun2 = [...num1]
+
+// console.log(nun2)
+
+
+// let conecrArray1 = [12, 23, 34, 45, 56, 67, 78, 89,90]
+
+// let concArrays1 = [90, 98, 87, 76, 65, 54, 43, 32, 21, 1]
+
+// let arrs = [...concArrays1, ...conecrArray1];
+
+// console.log(arrs);
+
+
+
 
