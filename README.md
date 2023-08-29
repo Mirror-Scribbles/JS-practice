@@ -2170,5 +2170,40 @@ $eclypse.style.backgroundColor = ""
 // $whatIsDOM.outerHTML = text;
 
 
+// practice : 
+
+
+
+
+// const $parrafo = document.querySelector(".what__are-you");
+
+// const $narrow = document.getElementById("what?");
+
+
+// let text = `yo soy un ser humano. Cuando hablamos del ser humano o directamente del humano, nos referimos a nuestra especie: el Homo sapiens (del latín “hombre sabio”), perteneciente al orden de los primates y a la familia de los homínidos, creadores de la civilización que hoy en día domina y transforma el planeta Tierra.`;
+
+// // $parrafo.textContent = text;
+
+// $narrow.textContent = text;
+
+
+
+
+
+// DOM Traversing: Recorriendo el DOM
+
+// const $lits = document.querySelector(".list__list-0")
+
+
+// console.log($lits)
+// console.log($lits.children)
+// console.log($lits.children[2])
+// console.log($lits.parentElement)
+// console.log($lits.firstElementChild)
+// console.log($lits.lastElementChild)
+// console.log($lits.previousElementSibling)
+// console.log($lits.nextElementSibling);
+// console.log($lits.closest("dive"));
+// console.log($lits.closest("dive"));
 
 
