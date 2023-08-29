@@ -2207,3 +2207,15 @@ $eclypse.style.backgroundColor = ""
 // console.log($lits.closest("dive"));
 
 
+// DOM: Creando Elementos y Fragmentos
+
+
+const $ullist = document.createElement("li"),
+$content = document.createTextNode("Camion")
+
+$ullist.classList.add("list-item_new");
+
+let $ul = document.querySelector(".list__list-0")
+
+$ul.appendChild($ullist);
+
