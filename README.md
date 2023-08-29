@@ -2117,5 +2117,58 @@ $eclypse.classList.remove("eclypse")
 $eclypse.style.backgroundColor = ""
 
 
+// DOM: Clases CSS 2 
+
+
+
+
+
+// const $Canvas = document.querySelector(".Canvas");
+// console.log($Canvas)
+// console.log($Canvas.classList)
+// console.log($Canvas.classList.contains("rotate__44"))
+// $Canvas.classList.add("rotata-44");
+// console.log($Canvas.classList.contains("rotata-44"))
+// $Canvas.classList.remove("rotata-44");
+// console.log($Canvas.classList.contains("rotata-44"))
+// $Canvas.classList.toggle("rotata-44")
+// console.log($Canvas.classList.contains("rotata-44"))
+// $Canvas.classList.toggle("rotata-44")
+// console.log($Canvas.classList.contains("rotata-44"))
+// $Canvas.classList.toggle("rotata-44")
+// console.log($Canvas.classList.contains("rotata-44"))
+// $Canvas.classList.replace("rotata-44", "rotate-45")
+// console.log($Canvas.classList.contains("rotata-45"))
+
+
+
+
+
+
+
+// DOM: Texto y HTML
+
+
+
+
+
+// const $whatIsDOM = document.getElementById("que-es");
+
+// let text = `The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language. 
+
+// The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+// Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.`
+
+
+// $whatIsDOM.innerText = text; 
+
+// $whatIsDOM.textContent = text;
+
+// $whatIsDOM.innerHTML = text;
+
+// $whatIsDOM.outerHTML = text;
+
+
 
 
