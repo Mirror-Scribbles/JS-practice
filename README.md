@@ -2219,3 +2219,77 @@ let $ul = document.querySelector(".list__list-0")
 
 $ul.appendChild($ullist);
 
+// practica / 
+
+// const $ullistitem = document.createElement("p");
+
+// let text = `The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language. 
+
+// The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+// // Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.`
+
+// $ullistitem.textContent = text;
+
+
+// $ullistitem.classList.add("MALOY_MALOA");
+
+// const $menu = document.querySelector(".menu");
+
+// $menu.appendChild($ullistitem);
+
+
+// const Cars = ["BMW", "Mercedes-Benz", "Audi", "Renault", "Ford",],
+// $carList = document.createElement("ul");
+
+// document.write("<h3>Lista de carros</h3>")
+// document.body.appendChild($carList);
+
+// Cars.forEach( el => {
+//     const $li = document.createElement("li");
+//     $li.textContent = el;
+//     $carList.appendChild($li)
+// });
+
+
+
+// const $month = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+// $monthOfTheYears = document.createElement("ul"),
+// $fragment = document.createDocumentFragment()
+
+// $month.forEach( M => {
+// const $li = document.createElement("li");
+// $li.textContent = M;
+// $fragment.appendChild($li);
+// })
+// document.write(`<h4>meses del año</h4>`)
+
+// $monthOfTheYears.appendChild($fragment);
+
+// document.body.appendChild($monthOfTheYears);
+
+
+
+
+// const $continentes = ["Asia", "Africa", "Europe", "North America", "South America", "Australia/Oceania", "Antarctica"],
+// $consti = document.createElement("ul"),
+// $fragment = document.createDocumentFragment();
+
+// $continentes.forEach( month => {
+//     const $li = document.createElement("li");
+//     $li.textContent = month;
+//     $fragment.appendChild($li);
+// });
+
+// document.write(`<h5>continentes</h5>`);
+
+// $consti.appendChild($fragment)
+
+// document.body.appendChild($consti);
+
+
+
+
+
+// DOM: Templates HTML
+
