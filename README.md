@@ -1898,6 +1898,9 @@ console.log(min(78, 89, 75))
 
 
                          // libreria Math
+
+
+                         
                         //  https://www.youtube.com/watch?v=BGXwssmxGuY
 
 //  https://lenguajejs.com/javascript/number/objeto-math/
@@ -1937,7 +1940,7 @@ console.log(min(78, 89, 75))
 // console.log(X);
 
 
-//  name: "camilo",
+//  name: "Camilo",
 // let texto ="Hola soy tu amigo Mirror";
 // let texto ="Hola soy tu amigo Mirror";
 // const speak = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
@@ -2117,7 +2120,7 @@ $eclypse.classList.remove("eclypse")
 $eclypse.style.backgroundColor = ""
 
 
-// DOM: Clases CSS 2 
+// DOM: Classes CSS 2 
 
 
 
@@ -2287,6 +2290,40 @@ $ul.appendChild($ullist);
 
 // document.body.appendChild($consti);
 
+
+
+Other practice ...................................................................................................................................................................................................................
+
+
+
+
+
+
+const $fruits = ["Apple", "Grape", "Orange", "Mango", "Banana", "Pineapple", "Kiwi", "Watermelon", "Cherry"], $nameOfFruits = document.createElement("ul"), $fragment = document.createDocumentFragment();
+
+$fruits.forEach( F => {
+    const $li = document.createElement("li");
+    $li.textContent = F;
+    $fragment.appendChild($li);
+});
+
+$nameOfFruits.appendChild($fragment);
+document.body.appendChild($nameOfFruits);
+
+
+
+// otros ejemplos con el DOM
+
+
+ let $tutulo = document.getElementById("title");
+
+$tutulo.innerHTML = "practice";  
+
+
+
+
+
+Other practice  ...................................................................................................................................................................................................................................................
 
 
 
