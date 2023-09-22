@@ -2087,6 +2087,10 @@ console.log(min(78, 89, 75))
 
 // console.log($inputClass);
 
+
+
+
+
 // DOM: Estilos y Variables CSS
 
 
@@ -2322,9 +2326,52 @@ $tutulo.innerHTML = "practice";
 
 
 
-
 Other practice  ...................................................................................................................................................................................................................................................
 
+ el dom another class
+
+// https://www.youtube.com/playlist?list=PL6sR-wTJGqSl1euWMYaom2PZhVHqO0uLa
+
+// pagina web lectura : https://arielfuggini.com/javascript-definitivo-vol1/manipulando-el-dom/
+
+const $div = document.createElement("div");
+$div.classList = "div_1";
+
+let $parraf = document.createElement("p");
+
+let text = "This is just a practice with a P tag";
+
+$parraf.textContent = text;
+
+$div.appendChild($parraf);
+
+const $img = document.createElement("img");
+
+$img.src ="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg?size=626&ext=jpg"
+
+$img.width = "300";
+
+$img.alt ="graphic about programming";
+
+$div.appendChild($img)
+
+document.body.appendChild($div);
+
+
+// Voy a cambiar en llas etiquetas p la clase, y el contenido.
+
+const $parrafo1 = document.querySelector(".parrafo_1");
+
+$parrafo1.classList.add("World__war1");
+
+const $h1 = document.getElementById("title");
+
+$h1.classList.add("run");
+
+const $parrafo2 = document.querySelector("parrafo_2");
+
+
+$parrafo1.textContent = "World War I (28 July 1914 – 11 November 1918), often abbreviated as WWI, was a global conflict fought between two coalitions, the Allied Powers and the Central Powers. Fighting took place throughout Europe, the Middle East, Africa, the Pacific, and parts of Asia.";
 
 
 
