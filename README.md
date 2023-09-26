@@ -2373,6 +2373,24 @@ const $parrafo2 = document.querySelector("parrafo_2");
 
 $parrafo1.textContent = "World War I (28 July 1914 – 11 November 1918), often abbreviated as WWI, was a global conflict fought between two coalitions, the Allied Powers and the Central Powers. Fighting took place throughout Europe, the Middle East, Africa, the Pacific, and parts of Asia.";
 
+// mini project with Js DOM. + an event listener 
+
+
+let $text = "this si just a proof of what I am capable of doing with Js on my own";
+
+const $div = document.createElement("div"), $h2 = document.createElement("h2");
+
+const $paragraph = document.createElement("p");
+
+$div.classList = "dive_run";
+
+$h2.textContent = $text;
+
+$paragraph.textContent = "The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. This guide will introduce the DOM, look at how the DOM represents an HTML document in memory and how to use APIs to create web content and applications";
+
+$div.append($h2, $paragraph)
+
+document.body.appendChild($div);
 
 
 // DOM: Templates HTML
