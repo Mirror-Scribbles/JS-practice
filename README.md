@@ -23,7 +23,7 @@
 
 
 
-// template String
+// template String..............................................................................................................................................................................................................................................
 
 
 // let nickname  = "mirror scribbles"
@@ -66,7 +66,7 @@
 
 
 
-// condicionales, practica. 
+// condicionales, practica. .................................................................................................................................................................................................................................
 
 // operadores logicos,
 
@@ -74,7 +74,7 @@
 
 // || o 
 
-// Los operadores de igualdad 
+// Los operadores de igualdad ..........................................................................................................................................................................................................................................
 
 // ===	igual valor y con el tipo
 // !=	no es igual
@@ -154,7 +154,7 @@
 
 
 
-// condicional switch practica 
+// condicional switch practica ............................................................................................................................................................................................................................................
 
 // sintaxis simple: 
 
@@ -282,13 +282,13 @@
 // console.log("que otro planeta te gustaria qie investigaramos?");
 
 
-// fin switch parctica 
+// fin switch parctica .................................................................................................................................................................................................................................................
+
+?
 
 
 
-
-
-// Operador ternario practica : 
+// Operador ternario practica :..................................................................................................................................................................................................................................
 
 // sintaxis, 
 
@@ -340,7 +340,7 @@
 
 
 
-// Array practica
+// Array practica.........................................................................................................................................................................................................
 
 // let palabras = ["hola","pedro", "color"];
 // let numeros =[1,2,3,4,5,6,7,8];
@@ -365,10 +365,10 @@
 // console.log(numeros.reverse()); le da la vuelata al array
 
 
-// metodo .splice
+// metodo .splice................................................................................................................................................................................................................
 
 
-// .slice  
+// .slice  ...............................................................................................................................................................................................................
 
 // numeros.splice(2,0,12,34,5,76,);
 // console.log(numeros);
@@ -414,15 +414,15 @@
 
 
 
-// bucles  practica 
+// bucles  practica ...............................................................................................................................................................................................................................................
 
 
-// Bucle while & do...while
+// Bucle while & do...while..................................................................................................................................................................................................
 
 
 
 
-// while 
+// while .......................................................................................................................................................................................................
 // let a = 1;
 
 // while(a<=20){
@@ -438,8 +438,8 @@
 // console.log("felicidades has roto el bucle")
 
 
-
-// do while 
+........
+// do while ..................................................................................................................................................................................................
 
 // let color ="";
 
@@ -539,7 +539,7 @@
 
 
 
-// objetos
+// objetos..........................................................................................................................................................................................................................................................
 
 // const data = {
 // name : "julian",
@@ -598,7 +598,7 @@
 
 
 
-// funciones practica giada.
+// funciones practica giada.....................................................................................................................................................................................................................................
 
 // const greet =(name = "miguel, angel")=>{
 // console.log(`Hola ${name}`)
@@ -681,7 +681,7 @@
 
 
 
-// declaracion de un objeto
+// declaracion de un objeto.................................................................................................................................................................................................................................
 
 
 
@@ -723,7 +723,7 @@
 
 
 
-// Programacion orientada a objetos, 
+// Programacion orientada a objetos, ........................................................................................................................................................................................................................
 
 
 
@@ -749,7 +749,7 @@
 
 
 
-// operadores de javascript
+// operadores de javascript................................................................................................................................................................................................................................
 
 // Operadores de comparación
 // Igualdad (==) Verifica la igualdad de dos expresiones sin tener en cuenta el tipo de dato.
@@ -829,7 +829,7 @@
 // El hierro es duro = True.
 // El hierro es un metal ^ El hierro es duro = False.
 
-// APLICAR LOS BUCLES FOR OF FOR IN PARA LOS CONSTRUCTOS, E IMPRIMIRLOS En PANTALLAS, CREAT UN COPNSTRUSCTO DESDE SERO SIN VER TUTORIALES. 
+// APLICAR LOS BUCLES FOR OF FOR IN PARA LOS CONSTRUCTOS, E IMPRIMIRLOS En PANTALLAS, CREAT UN COPNSTRUSCTO DESDE SERO SIN VER TUTORIALES. ...........................................................................................................................
 
 
 
@@ -981,7 +981,7 @@
 
 
 
-// otra practica
+// otra practica...................................................................................................................................................................................................................................................
 
 
     // class book{
@@ -1029,7 +1029,7 @@
 
 
 
-// Metodos de los arrays II
+// Metodos de los arrays II.................................................................................................................................................................................................................
 
 
 // const arr = [23, 5, 65, 1, 9, 4, 8, 46,];
@@ -1062,7 +1062,7 @@
 // map() : Permite recorrer el array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original.
 
 
-// practica de map
+// practica de map............................................................................................................................................................................................................................................
 
 // const arr1 = arr.map(multipy)
 
@@ -1090,7 +1090,7 @@
 // console.log(TotalsValue)
 
 
-// fin de map
+// fin de map...........................................................................................................................................................................................................................................
 
 
 // const arr = [23, 5, 65, 1, 9, 4, 8, 46,];
@@ -1130,7 +1130,7 @@
 
 
 
-// fin de filter
+// fin de filter................................................................................................................................................................................................................................
 
 
 
@@ -1156,7 +1156,7 @@
 
 
 
-// fin foreach
+// fin foreach.................................................................................................................................................................................................................................
 
 
 // persons =[
@@ -1203,7 +1203,7 @@
 
 
 
-// Practica del primerr bloque;
+// Practica del primerr bloque;.............................................................................................................................................................................................................................
 
 // const peliculas =[
 //     {
@@ -1229,11 +1229,7 @@
 // ]
 
 
-// fin del primer bloque.  
-
-
-
-
+// fin del primer bloque.  .............................................................................................................................................................................................................................
 
 
 
@@ -1379,7 +1375,7 @@
 // ];
 
 
-// every() : Es similar al some(), ya que itera el array y retorna un booleano. Pero esta vez, para que dicho booleano sea true todos los elementos del array deberán pasar la condición dada.
+// every() : Es similar al some(), ya que itera el array y retorna un booleano. Pero esta vez, para que dicho booleano sea true todos los elementos del array deberán pasar la condición dada.......................................................................
 
 // const res = numbers.every((numbers, index)=>{
 //     console.log(index)
@@ -1478,7 +1474,7 @@
 //     console.log("it doesn't exist")
 // }
 
-// fin de este bloque
+// fin de este bloque...........................................................................................................................................................................................................................................
  
 
 
@@ -1504,7 +1500,7 @@
 
 
 
-// findIndex() : Retorna el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1.
+// findIndex() : Retorna el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1................................................................
 
 
 
@@ -1512,7 +1508,7 @@
 
 
 
-// fill() : Cambia todos los elementos de un array por un valor estático, desde el índice de inicio hasta el índice final. Retorna el array modificado.
+// fill() : Cambia todos los elementos de un array por un valor estático, desde el índice de inicio hasta el índice final. Retorna el array modificado............................................................................................
 
 
 
@@ -1540,7 +1536,7 @@
 
 // console.log(incars)
 
-// fin de este bloque
+// fin de este bloque.........................................................................................................................................................................................................................................
 
 
 
@@ -1575,7 +1571,7 @@
 
 // console.log(plice)
 
-// fin de este bloque
+// fin de este bloque.................................................................................................................................................................................................................................................
 
 
 
@@ -1614,7 +1610,7 @@
 // from() : Crea una nueva instancia de Array a partir de un objeto iterable.
 
 
-// // Final project arrays: 
+// // Final project arrays: .........................................................................................................................................................................................................................................
 
 
 
@@ -1659,7 +1655,7 @@ const characters = [
 
 
 
-// MAP
+// MAP...................................................................................................................................................................................................................
 // Get an array of all names
 const names = characters.map(characters =>  characters.name )
 console.log(names)
@@ -1692,8 +1688,11 @@ console.log(totalNumber);
 // Get the total number of characters by eye color (hint. a map of eye color to count)
 const eyeColor = characters.map(characters => characters.eye_color);
 console.log(eyeColor)
+..
 
-// FILTER
+
+
+// FILTER................................................................................................................................................................................................................................................
 // Get characters with mass greater than 100
 const GreaterThan100 = characters.filter(characters => characters.mass > 100 );
 console.log(GreaterThan100);
@@ -1704,21 +1703,25 @@ console.log(lesThan200)
 
 // Get all male characters
 const maleChracters = characters.filter(characters => characters.gender === "male")
-console.log(maleChracters)
+console.log(maleChracters);
 
 // Get all female characters
 
 const getFimalech = characters.filter(characters => characters.gender === "female")
 console.log(getFimalech)
 
-// SORT
+
+
+// SORT.........................................................................................................................................................................................................................................
 // Sort by mass
 const byMass = characters.sort((a,b)=>{
 return b.mass - a.mass
 })
 console.log(byMass)
 
-// Sort by height
+
+
+// Sort by height............................................................................................................................................................................................................................
 const hesort = characters.sort((a, b) => a.height - b.height)
 console.log(hesort)
 // Sort by name
@@ -1737,7 +1740,7 @@ return -1;
 console.log(byGender)
 
 
-// EVERY
+// EVERY....................................................................................................................................................................................................................................
 // Does every character have blue eyes?
 const allBlueEyes = characters.every((character)=>{
     return character.eye_color ==="blue";
@@ -1756,7 +1759,7 @@ console.log(allShorter)
 const allMale = characters.every((characters)=> characters.gender === "male")
 console.log(allMale);
 
-// SOME
+// SOME...................................................................................................................
 // Is there at least one male character?
 const someMale = characters.some((characters) =>  {
 return characters.gender === "male";
@@ -1774,9 +1777,9 @@ const massLessThan50 = characters.some(characters => characters.mass < 50)
 console.log(massLessThan50)  
 
 
-/ Spread operator
+/ Spread operator.....................................................................................................................................................................................................................................................
 
-// practica:
+// practica:...............................................................................................................................................................................
 
 // const arr = [12,34, 68, 8, 5]
 
@@ -1832,7 +1835,7 @@ console.log(massLessThan50)
 
 
 
-// parametros rest / Rest parameters
+// parametros rest / Rest parameters.................................................................................................................................................................................................................
 
 
 function suma(x, y, ...Z){
@@ -1856,7 +1859,7 @@ return result
 
 console.log(sumi(3,5, 6,7,3,4,6,8,9));
 
-// rest examples
+// rest examples........................................................................................................................................................................................................................
 
 const sum = (...data) => data.reduce((acc, cur) => acc + cur)
 
@@ -1897,7 +1900,7 @@ console.log(min(78, 89, 75))
 // console.log(arrs);
 
 
-                         // libreria Math
+                         // libreria Math................................................................................................................................................................................................................
 
 
                          
@@ -1947,7 +1950,7 @@ console.log(min(78, 89, 75))
 
 // speak(texto);
 
-// Dom
+// Dom..................................................................................................................................................................................
 
 
 // :nos devuelve todos los elementos que pon nombrer tengan lo que esta en el parentesis
@@ -1979,7 +1982,7 @@ console.log(min(78, 89, 75))
 
 
 
-// DOM: Nodos, Elementos y Selectores practica
+// DOM: Nodos, Elementos y Selectores practica...........................................................................................................................................................................................................
 
 
 // Métodos tradicionales
@@ -1999,7 +2002,9 @@ console.log(min(78, 89, 75))
 // En el caso de no encontrar el elemento indicado, devolverá null.
 
 
-// Métodos modernos
+
+
+// Métodos modernos................................................................................................................................................................................................................................................
 
 // querySelector() : Busca el primer elemento que coincide con el selector CSS sel.	El método .querySelector() devuelve el primer elemento que encuentra que encaja con el selector CSS suministrado por parámetro. Siempre devuelve un solo elemento y en caso de no coincidir con ninguno, devuelve : Lo interesante de este método, es que al permitir suministrarle un selector CSS básico o incluso un selector CSS avanzado, se vuelve un sistema mucho más potente.
 
@@ -2054,7 +2059,7 @@ console.log(min(78, 89, 75))
 // console.log($linkDOM.hasAttribute("rel"));
 
 
-// otros ejemplos
+// otros ejemplos.....................................................................................................................................................................................................................................
 
 // //1-Encontrar un elemento por su ID y vincularle una clase
 // var div = document.querySelector("#div1");
@@ -2091,7 +2096,7 @@ console.log(min(78, 89, 75))
 
 
 
-// DOM: Estilos y Variables CSS
+// DOM: Estilos y Variables CSS.................................................................................................................................................................................
 
 
 
@@ -2124,7 +2129,7 @@ $eclypse.classList.remove("eclypse")
 $eclypse.style.backgroundColor = ""
 
 
-// DOM: Classes CSS 2 
+// DOM: Classes CSS 2 ..........................................................................................................................................................................................................
 
 
 
@@ -2153,7 +2158,7 @@ $eclypse.style.backgroundColor = ""
 
 
 
-// DOM: Texto y HTML
+// DOM: Texto y HTML...........................................................................................................................................................................................
 
 
 
@@ -2177,7 +2182,7 @@ $eclypse.style.backgroundColor = ""
 // $whatIsDOM.outerHTML = text;
 
 
-// practice : 
+// practice : ...............................................................................................................................................................................................................................................
 
 
 
@@ -2197,7 +2202,7 @@ $eclypse.style.backgroundColor = ""
 
 
 
-// DOM Traversing: Recorriendo el DOM
+// DOM Traversing: Recorriendo el DOM..........................................................................................................................................................................................................................
 
 // const $lits = document.querySelector(".list__list-0")
 
@@ -2214,7 +2219,7 @@ $eclypse.style.backgroundColor = ""
 // console.log($lits.closest("dive"));
 
 
-// DOM: Creando Elementos y Fragmentos
+// DOM: Creando Elementos y Fragmentos...............................................................................................................................................................................................................................
 
 
 const $ullist = document.createElement("li"),
@@ -2225,8 +2230,10 @@ $ullist.classList.add("list-item_new");
 let $ul = document.querySelector(".list__list-0")
 
 $ul.appendChild($ullist);
+.
 
-// practica / 
+
+// practica / ...................................................................................................................................................................................................................................................
 
 // const $ullistitem = document.createElement("p");
 
@@ -2316,7 +2323,7 @@ document.body.appendChild($nameOfFruits);
 
 
 
-// otros ejemplos con el DOM
+// otros ejemplos con el DOM................................................................................................................................................................................................................................
 
 
  let $tutulo = document.getElementById("title");
@@ -2373,7 +2380,7 @@ const $parrafo2 = document.querySelector("parrafo_2");
 
 $parrafo1.textContent = "World War I (28 July 1914 – 11 November 1918), often abbreviated as WWI, was a global conflict fought between two coalitions, the Allied Powers and the Central Powers. Fighting took place throughout Europe, the Middle East, Africa, the Pacific, and parts of Asia.";
 
-// mini project with Js DOM. + an event listener 
+// mini project with Js DOM. + an event listener ..........................................................................................................................................................................................................
 
 
 let $text = "this si just a proof of what I am capable of doing with Js on my own";
@@ -2392,6 +2399,242 @@ $div.append($h2, $paragraph)
 
 document.body.appendChild($div);
 
+// $div.insertAdjacentElement("beforebegin", $cloneNode)
+// $div.insertAdjacentElement("afterbegin",$cloneNode)
+// $div.insertAdjacentElement("beforeend", $cloneNode)
+// $div.insertAdjacentElement("afterend", $cloneNode)
 
-// DOM: Templates HTML
+// mini eventos y crear formularios....................................................................................................................................................................................................................................
+
+// https://www.youtube.com/watch?v=YwhiTGKtQnk&list=PL6sR-wTJGqSl1euWMYaom2PZhVHqO0uLa&index=6 
+
+
+// const clickEvent = (event) => {
+// console.log(event);
+// }
+
+
+
+//  Modificando Elementos (Old Style).................................................................................................................................................................................................
+
+// agregar or eliminar hijos del dom..............................................................................................................................................................................................................................
+
+// replaceChield. se coloca el nuevo elemeneto y el elemento a reenplazar
+// removeChild: quita  el elemento
+// insertBefore, insectar un Elementento antes del elemente o nodo que elojamos
+
+
+
+
+
+
+// DOM: Modificando Elementos (Cool Style).................................................................................................................................................................................................
+
+
+// .inserAdjacent...
+// .inserAdjacentElement(position, el)
+// .inserAdjacentHTML(position, el)
+// .inserAdjacentText(position, el)
+
+// Posiciones:
+// beforebegin(hermano anterior)
+// afterbegin((primer hijo)
+// beforeend(ultimo hijo)
+// afterend(hermano siguiente)
+
+
+// mini project  agregar una galeria con javascrit ...................................................................................................................................................................................................
+
+
+
+
+// // DOM: Manejadores de Eventos...............................................................................................................................................................................................
+
+// // HTML 
+//         function holaMundo() {
+//         alert("Hola mundo");
+//         console.dir(Event);
+//         }
+
+
+// EVENTS WITH JS.............................................................................................................................................................................................................................
+
+
+// const $Event = document.querySelector('.Evento');
+// $Event.addEventListener('click', () => {
+// $Event.style.backgroundColor = 'red';
+// });
+
+// const $click = document.querySelector("button");
+
+// $click.addEventListener('click', (e) =>{
+// $click.style.backgroundColor = 'red';
+// alert("has echo click")
+// console.log(e);
+// });
+
+
+// hacer una to do list;...................................................................................................................................................................................................................
+
+
+
+// const $parrafo1 = document.querySelector(".parrafo_1");
+// const $button = document.querySelector(".button");
+// const $removerButton2 = document.querySelector(".button-1");
+
+// // añadir eventos..................................................................................................................................................................................................................................
+
+// const $click = (nombre = 'Desconocid@') =>{
+//     alert(`hola ${nombre}`);
+// };
+
+// const $copy= () => {
+//     console.log("you have copied the paragraph one one, ");
+// };
+
+
+// $parrafo1.addEventListener("click", $copy);
+
+// $button.addEventListener("click", ()=> {
+// $click('carlos')
+// });
+
+// // remover eventos......................................................................................................................................................................................................
+
+// const removerdblclick = (e) => {
+//     alert(`removiendo el evento de tipo ${e.type}`);
+//     $removerButton2.removeEventListener('dblclick',removerdblclick);
+//     $removerButton2.disabled = true;
+// }
+
+// $removerButton2.addEventListener("dblclick", removerdblclick);
+
+// // agregar y remover el color de la pagina...................................................................................................................................................................................................
+
+// const $addColor = document.querySelector(".add_color");
+// const $removeColor = document.querySelector(".remove_color");
+
+// const addAndRemoveEvent = () => {
+// alert(` the background color is being remove...` )
+// $removeColor.removeEventListener("dblclick", addAndRemoveEvent);
+// }
+
+// $addColor.addEventListener("dblclick", () => {
+//     document.body.style.backgroundColor = "#375af7";
+//     $addColor.style.color = "#1b3c58";
+// })
+
+// $removeColor.addEventListener("dblclick", addAndRemoveEvent, $addColor);
+
+
+
+// añadir y remover background color...................................................................................................................................................................................................
+
+// const $addColor = document.querySelector(".add_color")
+// const $removeColor = document.querySelector(".remove_color")
+
+// const colorBackground = () =>{
+//     document.body.style.backgroundColor = '#3a299b';
+//     document.body.style.color = '#fff';
+//     alert(`The color is being added`)
+//     $addColor.disabled = true;
+// }
+
+// const  BackgroundRemove = () => {
+//     document.body.style.backgroundColor = '#ffffff';
+//     document.body.style.color = "#000000";
+//     alert(`The color is being removed`)
+// }
+
+// $addColor.addEventListener("dblclick", colorBackground);
+// $removeColor.addEventListener("dblclick", BackgroundRemove);
+
+
+
+
+// Temporizadores (setTimeout & setInterval)
+// console.log("starting time out")
+// setTimeout(() => {
+// console.log("time out was finished successfully")
+// }, 1000)
+
+// setInterval(() => {
+// console.log("interval is slower than timeout this time")
+// },3000)
+
+// ahora podemos cancelar el clear interval y el tomeout...........................................................................................................................................
+
+
+
+// mostrar la hora, .......................................................................................................................................................................................................................................
+
+// Pare eso guardadmos el einterval y el timeout en una variable y otulizamos :
+
+// clearInterval and clearTimeout: 
+
+// console.log("time out was iniciated")
+// let timeOut = setTimeout (() => {
+// console.log("time out is working")
+// }, 2000)
+
+// console.log("interval is doing its thing")
+// let interval = setInterval(() => {
+// console.log(new Date().toLocaleTimeString());
+// },1000)
+
+// clearTimeout(timeOut)
+// console.log("time out is working no more")
+// clearInterval(interval)
+// console.log("interval is broken")
+
+
+// objeto tiempo or date...........................................................................................................................................................................................................................
+
+// https://www.techiedelight.com/es/get-current-date-time-javascript/  
+
+
+// projectos ...........................................................................................................................................................................................................................................
+// 1
+
+// mandar formularios ver todo el video: 
+// https://www.youtube.com/watch?v=03eid8Lc8V8
+
+
+
+// Objeto date  practice..........................................................................................................................................................................................................................
+
+
+// fecha
+console.log(Date())
+let $date = new Date()
+console.log($date)
+// fecha guardada en una variable
+console.log($date.getDate())
+// dia del mes
+// console.log($date.getDay()) 
+// dias de la semana D L M MI J V S => 0 1 2 3 4 5 6
+console.log($date.getMonth()) 
+//  imprime los meces del año empezando desde la posicion 0 como enero de punto de partida y diciembre seria la posicion 11 y no 12
+console.log($date.getYear())
+// cuantos años han pasado, noi utilizemos este metodo
+console.log($date.getFullYear())
+// muestra el año en el que estamos
+console.log($date.getHours())
+// muestra la hora
+console.log($date.getMinutes())
+// muestra los minutos
+console.log($date.getSeconds())
+// muestra los seguendos
+console.log($date.getMilliseconds())
+// muestra los miliseguendos
+
+// ahora con toString optenemos la misma cadena de texto que el constructor Date pero de una forma mas humanamente entendible, y podriamos estraer partes de la fecha
+console.log($date.toString())
+console.log($date.toDateString())
+console.log($date.toLocaleString())
+console.log($date.toLocaleDateString())
+console.log($date.getTimezoneOffset())
+
+
+// DOM: Templates HTML.............................................................................................................................................................................................................................................
 
