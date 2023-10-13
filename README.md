@@ -2614,7 +2614,9 @@ console.log($date.getDate())
 // console.log($date.getDay()) 
 // dias de la semana D L M MI J V S => 0 1 2 3 4 5 6
 console.log($date.getMonth()) 
+
 //  imprime los meces del año empezando desde la posicion 0 como enero de punto de partida y diciembre seria la posicion 11 y no 12
+
 console.log($date.getYear())
 // cuantos años han pasado, noi utilizemos este metodo
 console.log($date.getFullYear())
@@ -2629,6 +2631,7 @@ console.log($date.getMilliseconds())
 // muestra los miliseguendos
 
 // ahora con toString optenemos la misma cadena de texto que el constructor Date pero de una forma mas humanamente entendible, y podriamos estraer partes de la fecha
+
 console.log($date.toString())
 console.log($date.toDateString())
 console.log($date.toLocaleString())
