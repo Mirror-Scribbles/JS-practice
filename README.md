@@ -2053,7 +2053,7 @@ console.log(min(78, 89, 75))
 // console.log($linkDOM.hasAttribute("rel"));
 
 
-// // remover atributos; 
+// // remover atributos;......................................................................................................................................................................................................................
 
 // $linkDOM.removeAttribute("rel");
 // console.log($linkDOM.hasAttribute("rel"));
@@ -2552,7 +2552,7 @@ document.body.appendChild($div);
 
 
 
-// Temporizadores (setTimeout & setInterval)
+// Temporizadores (setTimeout & setInterval)..................................................................................................................................................................................
 // console.log("starting time out")
 // setTimeout(() => {
 // console.log("time out was finished successfully")
@@ -2637,6 +2637,15 @@ console.log($date.toDateString())
 console.log($date.toLocaleString())
 console.log($date.toLocaleDateString())
 console.log($date.getTimezoneOffset())
+
+const $date = new Date().toDateString();
+const $div = document.createElement("div")
+
+let interval = setInterval(()=>{
+    const $p = document.createElement("p").textContent = $date;
+    $div.append($p)
+    document.body.appendChild($div)
+},1000)
 
 
 // DOM: Templates HTML.............................................................................................................................................................................................................................................
