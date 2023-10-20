@@ -2562,7 +2562,7 @@ document.body.appendChild($div);
 // console.log("interval is slower than timeout this time")
 // },3000)
 
-// ahora podemos cancelar el clear interval y el tomeout...........................................................................................................................................
+// ahora podemos cancelar el clear interval y el tomeout........................................................................................................................................... ------------------------------------------------------------------------
 
 
 
@@ -2615,7 +2615,7 @@ console.log($date.getDate())
 // dias de la semana D L M MI J V S => 0 1 2 3 4 5 6
 console.log($date.getMonth()) 
 
-//  imprime los meces del año empezando desde la posicion 0 como enero de punto de partida y diciembre seria la posicion 11 y no 12
+//  imprime los meces del año empezando desde la posicion 0 como enero de punto de partida y diciembre seria la posicion 11 y no 12  ---------------------------------------------------------------------------------------------------------------------------------------
 
 console.log($date.getYear())
 // cuantos años han pasado, noi utilizemos este metodo
@@ -2630,7 +2630,7 @@ console.log($date.getSeconds())
 console.log($date.getMilliseconds())
 // muestra los miliseguendos
 
-// ahora con toString optenemos la misma cadena de texto que el constructor Date pero de una forma mas humanamente entendible, y podriamos estraer partes de la fecha
+// ahora con toString optenemos la misma cadena de texto que el constructor Date pero de una forma mas humanamente entendible, y podriamos estraer partes de la fecha  -----------------------------------------------------------------------------------------------------
 
 console.log($date.toString())
 console.log($date.toDateString())
@@ -2646,6 +2646,87 @@ let interval = setInterval(()=>{
     $div.append($p)
     document.body.appendChild($div)
 },1000)
+
+
+// Interval practice -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// let interval = setInterval(()=>{
+//     const $p = document.createElement("p").textContent = $date;
+//     $div.append($p)
+//     document.body.appendChild($div)
+// },1000)
+// const $call= document.querySelector("#mprimir-Ventana");
+
+
+
+// try calll back  ----------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------
+
+
+// Los callbacks (a veces denominados funciones de retrollamada o funciones callback) no son más que un tipo de funciones que se pasan por parámetro a otras funciones. El objetivo de esto es tener una forma más legible de escribir funciones, más cómoda y flexible para reutilizarlas, y además entra bastante en consonancia con el concepto de asincronía de Javascript, como veremos más adelante.
+
+// const $button = document.querySelector("#imprimir-Ventana");
+
+// const callBack =  ()=> { console.log("A call back was executed in this arrow function.")
+// }  
+
+// $button.addEventListener("click", callBack)
+
+
+
+
+function carlk(){
+return "say somthing, ";
+}
+
+
+let doSomething = ()=> {
+    console.log("This arrow function will tell the function declaretion what to do which is...", carlk())
+}
+
+// doSomething()
+
+
+
+
+
+
+// Ahora veamos, como podemos hacer este mismo bucle utilizando el método forEach() del  al cuál le pasamos una función callback: -----------------------------------------------------------------------------------------------------------------------------------------
+
+
+const list = ["A", "B", "C"];
+
+
+function action(element, index) {
+  console.log("i=", index, "list=", element);
+}
+
+list.forEach(action);
+
+// Esto se suele reescribir de la siguiente forma:
+
+list.forEach((element, index) => {
+    console.log("i=", index, "list=", element)
+  });
+
+
+function timeoutCallback(){
+  console.log("The call back is up and running baby")
+}
+
+setTimeout(timeoutCallback, 2000)
+
+
+// call back practice
+
+const ThisTimeoutCallBack = setTimeout(() => {
+console.log("codigo asincrono.")
+}, 3000)
+
+console.log("codigo sincrono")
+
+
+
+
 
 
 // DOM: Templates HTML.............................................................................................................................................................................................................................................
