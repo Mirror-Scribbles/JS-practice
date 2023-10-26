@@ -2726,6 +2726,59 @@ console.log("codigo sincrono")
 
 
 
+// promise ejemplo
+
+
+// https://lenguajejs.com/javascript/asincronia/promesas/
+
+// const promis = Promise.resolve(1)
+// console.log(promis)
+// // acepted
+// promis
+// .then(x => x + 5)
+// .then(x => Promise.resolve(x + 5))
+// .then(x => console.log(x))
+
+
+// .then(x => console.log(x)) esta es la forma que podemos acesder al valor que tiene la promera
+//  en esta tambien la podemos indicar o sumar el valñor de la promesa por el que le acabamos de pasar, pero par aceder a este nuevo valor tenemos que invocar una vez mas el metodo then
+// pero tambien podriamos ejecutar otra promesa en el mismo then,
+
+// Rejected 
+// .then(prom => prom + 9)
+// .then(prom => Promise.resolve(prom * 6))
+// .then(prom => prom + 3)
+// .then(prom => Promise.reject('Something went wrong'))
+// .then(prom => console.log(prom, "this will not be log out"))
+// .catch(prom => console.log(prom));
+
+
+
+
+
+
+// otro ejemplo de promesa 
+
+// let promse = new Promise((resolve, reject)=>{
+// // code here
+// })
+
+
+// una promesa con un timeout
+
+
+// const tryThis = prompt('pick a number between 1 and 10')
+// let promiseWithTimeAut = new Promise((resolve, reject)=>{
+//     setTimeout(()=> {
+//         if (tryThis >= 10 ){
+//             resolve ('bigger than 10.')
+//         }else{ reject('lower than 10')
+//         }
+//     }, 3000)
+// })
+// .then( response => console.log (response,'The  promise With Timeout woks.'))
+// .catch (err =>  console.log (err, 'The promise With Timeout it is not working.'))
+
 
 
 
