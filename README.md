@@ -2767,6 +2767,8 @@ console.log("codigo sincrono")
 // una promesa con un timeout --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
 // const tryThis = prompt('pick a number between 1 and 10')
 // let promiseWithTimeAut = new Promise((resolve, reject)=>{
 //     setTimeout(()=> {
@@ -2778,6 +2780,95 @@ console.log("codigo sincrono")
 // })
 // .then( response => console.log (response,'The  promise With Timeout woks.'))
 // .catch (err =>  console.log (err, 'The promise With Timeout it is not working.'))
+
+// projects 
+
+// promises + callbacks examples -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// ------  iterar este ejemplo utilizando lso metodos del array si se peude si no, buscar una forma de que devuelva los resultados esperados como una practica de recordatorio
+
+// 2--- iterarlo, con funciones/ call backs
+// 3---- hacer un time out que devuelva el arry
+// 4------ iterarlo con promesas 
+
+let info = [
+    {
+  name:'juancarlos',
+  address: 'juancarlos@gmail.com',
+  age: 27,
+  kids: '4',
+},
+{
+    name:'andres',
+    address: 'andres@gmail.com',
+    age: 48,
+    kids: '',
+},
+{
+    name:'jason',
+    address: 'jason@gmail.com',
+    age: 30,
+    kids: '1',
+},
+{
+    name:'maicol',
+    address: 'maicol@gmail.com',
+    age: 59,
+    kids: '1',
+}
+]
+
+
+// 2--- iterarlo, con funciones/ call backs---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// funciones call backs
+
+// const newFunction = () =>{
+//    return 'callbackfunction is working just fine'
+// }
+
+// const getInfo = () =>{
+// console.log(info, newFunction) 
+// }
+// getInfo();
+
+
+// 3---- hacer un time out que devuelva el arry----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// const timeoutFuction = setTimeout(()=>{
+//     console.log(info)
+//     }, 3000)
+
+// const fucntionWithTimeOut = ()=>{
+// setTimeout(() => {
+// console.log(info)
+// }, 3000)
+// }
+
+// fucntionWithTimeOut()
+
+
+
+// 4------ iterarlo con promesas ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const promiseWithFuction = () => {
+
+    return  new Promise((resolve, reject) => {
+        if (info.length == 0) {
+        reject('something went worng in your code master, the Info date you are trying to access is empty')
+        }
+        setTimeout(() => {
+        resolve(info)
+        },3000)
+        })
+        // .then(res => console.log(res))
+        // .catch(err => console.log(err))
+    }
+
+promiseWithFuction()
+.then(res => console.log(res))
+.catch(err => console.log(err))
+// promises + callbacks  async/await
+
 
 
 
