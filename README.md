@@ -2659,7 +2659,7 @@ let interval = setInterval(()=>{
 
 
 
-// try calll back  ----------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------
+// try callback  ----------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------
 
 
 // Los callbacks (a veces denominados funciones de retrollamada o funciones callback) no son más que un tipo de funciones que se pasan por parámetro a otras funciones. El objetivo de esto es tener una forma más legible de escribir funciones, más cómoda y flexible para reutilizarlas, y además entra bastante en consonancia con el concepto de asincronía de Javascript, como veremos más adelante.
@@ -2726,7 +2726,7 @@ console.log("codigo sincrono")
 
 
 
-// promise ejemplo
+// promise ejemplo-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // https://lenguajejs.com/javascript/asincronia/promesas/
@@ -2757,14 +2757,14 @@ console.log("codigo sincrono")
 
 
 
-// otro ejemplo de promesa 
+// otro ejemplo de promesa --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // let promse = new Promise((resolve, reject)=>{
 // // code here
 // })
 
 
-// una promesa con un timeout
+// una promesa con un timeout --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // const tryThis = prompt('pick a number between 1 and 10')
