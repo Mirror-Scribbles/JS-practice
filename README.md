@@ -2870,6 +2870,106 @@ promiseWithFuction()
 // promises + callbacks  async/await
 
 
+/----------------------- Practica 1 , crear colores aleatorios en el backGround de fundo y despues quitar esos mismo colores de fundo. 
+
+
+// parctica 2 mostras en pantalla utilizando un if, settimeout y las promesas la AIP falsa que tenemos abajo, utilizando fragmentos,
+
+
+
+
+
+const userDate = [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "qui est esse",
+      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "eum et est occaecati",
+      "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "nesciunt quas odio",
+      "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "dolorem eum magni eos aperiam quia",
+      "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "magnam facilis autem",
+      "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "dolorem dolore est ipsam",
+      "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+    }
+]
+
+
+// practice 1
+
+// const ColorChange = () => {
+//   document.body.style.backgroundColor ="red";
+// }
+
+const $btn1 = document.getElementById('btn1');
+const $btn2 = document.getElementById('btn2');
+const $body = document.getElementById('body1')
+
+
+const ColorChange1 = () => {
+  if($body.classList.contains('red-Color')){
+    $body.classList.remove('red-Color')
+    console.log('Red color was removed')
+  }else if($body.classList.contains('blue-Color')){
+    $body.classList.replace('blue-Color', 'red-Color')
+    console.log('blue color was replaced by red color')
+  }else{$body.classList.contains('red-Color')
+    $body.classList.add('red-Color')
+console.log('the red color was added to the body')
+  }
+}
+
+
+const ColorChange2 = () => {
+  if($body.classList.contains('blue-Color')){
+    $body.classList.remove('blue-Color')
+    console.log('The blue color was removed from the DOM')
+  }else{
+    $body.classList.add('blue-Color')
+    console.log('The blue color was added to the DOM')
+  }
+}
+
+
+$btn1.addEventListener('click', ColorChange1)
+
+$btn2.addEventListener('click', ColorChange2)
 
 
 
