@@ -14,7 +14,11 @@ if($manin.classList.contains('blue__color'))
 }else{$manin.classList.add('blue__color')}
 });
 
-// $button2.addEventListener('click', ()=>{
-// if($manin.classList.contains())
-// })
+$button2.addEventListener('click', ()=> {
+if($manin.classList.contains('red__color')){
+    $manin.classList.remove('red__color')
+}else if($manin.classList.contains('blue__color')){
+    $manin.classList.remove('blue__color')
+}else{ $manin.classList.add('red__color')}
+});
 
