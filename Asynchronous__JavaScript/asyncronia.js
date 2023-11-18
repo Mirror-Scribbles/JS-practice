@@ -18,4 +18,4 @@ let noAsynFuction = ()=> {
 console.log(5*9)
 }
 
-$noAsynchronous.addEventListener('dblclick',noAsynFuction);
+$noAsynchronous.addEventListener('dblclick', noAsynFuction);
