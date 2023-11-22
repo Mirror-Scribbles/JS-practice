@@ -76,18 +76,54 @@
 // 2.1 // second chance hXMLHttpRequest
 
 
-(() =>{
-    const xmlttp = new XMLHttpRequest();
-    xmlttp.open('GET','https://jsonplaceholder.typicode.com/users');
-    xmlttp.send()
-    xmlttp.responseType = 'json'
-    xmlttp.onload = () => {
-        if(xmlttp.readyState == 4 && xmlttp.status == 200){
-            const data = xmlttp.response;
-            console.log(data)
+// (() =>{
+//     const xmlttp = new XMLHttpRequest();
+//     xmlttp.open('GET','https://jsonplaceholder.typicode.com/users');
+//     xmlttp.send()
+//     xmlttp.responseType = 'json'
+//     xmlttp.onload = () => {
+//         if(xmlttp.readyState == 4 && xmlttp.status == 200){
+//             const data = xmlttp.response;
+//             console.log(data)
+//         }else{
+//             console.log(`an error accoured getting the data ready at ${xmlttp.status}`)
+//         }
+//     }
+// })();
+
+
+// 2.2
+
+
+// hacer una peticion con xmlttprequest y ponerla en el doom
+
+const $lixx = document.getElementById('lix'), $fragment = document.createDocumentFragment();
+
+const request4 = () => {
+
+    const xmlttp6 = new XMLHttpRequest();
+    xmlttp6.open('GET', 'https://jsonplaceholder.typicode.com/users');
+    xmlttp6.send();
+    xmlttp6.responseType = 'json';
+    xmlttp6.onload = () =>{
+        if(xmlttp6.readyState == 4 && xmlttp6.status == 200){
+            const dataBase = xmlttp6.response;
+            console.log(dataBase)
         }else{
-            console.log(`an error accoured getting the data ready at ${xmlttp.status}`)
+            console.log('an error is here')
         }
     }
-})();
+
+}
+request4();
+
+
+
+
+
+
+
+
+
+
 
