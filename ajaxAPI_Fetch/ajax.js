@@ -1,12 +1,16 @@
 
-// first try: status filed.
+//1  first try: status filed.
+
+
 
 // var request = $.ajax({
 //     method: "GET",
 //     URL: 'https://jsonplaceholder.typicode.com/users'
 // }).done(console.log(request));
 
-// secound try : status pending. peticion ajax
+// ----------------------------------------------------------------------
+
+// 2  secound try : status pending. peticion ajax
 
 // (() => {
 //     const $fetch = document.getElementById('fetch'), $fragment = document.createDocumentFragment();
@@ -31,31 +35,59 @@
 //     })
 // })();
 
-
-
-
+// second chance ajax
 
 
 // third try pending, peticion : XMLHttpRequest. 
 
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
-xhr.send();
-xhr.responseType = "json";
-xhr.onload = () => {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    const data = xhr.response;
-    console.log(data);
-  } else {
-    console.log(`Error: ${xhr.status}`);
-  }
-};
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+// xhr.send();
+// xhr.responseType = "json";
+// xhr.onload = () => {
+//   if (xhr.readyState == 4 && xhr.status == 200) {
+//     const data = xhr.response;
+//     console.log(data);
+//   } else {
+//     console.log(`Error: ${xhr.status}`);
+//   }
+// };
 
 
 
+// 2,0 check failed
+
+// (() => {
+//     let xhttp = new XMLHttpRequest();
+//     const URL = 'https://jsonplaceholder.typicode.com/users';
+//     xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status === 200){
+//             const data = xhttp.response;
+//             console.log(data)
+//         }else{console.log(`error ${this.status}`)}
+//         xhttp.open('GET');
+//         xhttp.send();
+//         xhttp.responseType = 'json';
+//     }
+// })();
 
 
+// 2.1 // second chance hXMLHttpRequest
 
 
+(() =>{
+    const xmlttp = new XMLHttpRequest();
+    xmlttp.open('GET','https://jsonplaceholder.typicode.com/users');
+    xmlttp.send()
+    xmlttp.responseType = 'json'
+    xmlttp.onload = () => {
+        if(xmlttp.readyState == 4 && xmlttp.status == 200){
+            const data = xmlttp.response;
+            console.log(data)
+        }else{
+            console.log(`an error accoured getting the data ready at ${xmlttp.status}`)
+        }
+    }
+})();
 
