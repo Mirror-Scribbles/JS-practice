@@ -6,7 +6,7 @@ let y = 9;
 
 let testOut = () => {
    return setTimeout(()=> {
-    console.log(x*y)
+   console.log(x*y)
    }, 3000)
 }
 $asynchronous.addEventListener('dblclick', testOut);
@@ -14,8 +14,8 @@ $asynchronous.addEventListener('dblclick', testOut);
 // non asynchronous try
 
 
-let noAsynFuction = ()=> {
+let noAsynFaction = ()=> {
 console.log(5*9)
 }
 
-$noAsynchronous.addEventListener('dblclick', noAsynFuction);
+$noAsynchronous.addEventListener('dblclick', noAsynFaction); 

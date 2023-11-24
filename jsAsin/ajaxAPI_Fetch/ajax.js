@@ -97,30 +97,48 @@
 
 // hacer una peticion con xmlttprequest y ponerla en el doom
 
-const $lixx = document.getElementById('lix'), $fragment = document.createDocumentFragment();
+// const $lixx = document.getElementById('lix'), $fragment = document.createDocumentFragment();
 
-const request4 = () => {
+// const request4 = () => {
 
-    const xmlttp6 = new XMLHttpRequest();
-    xmlttp6.open('GET', 'https://jsonplaceholder.typicode.com/users');
-    xmlttp6.send();
-    xmlttp6.responseType = 'json';
-    xmlttp6.onload = () =>{
-        if(xmlttp6.readyState == 4 && xmlttp6.status == 200){
-            const dataBase = xmlttp6.response;
-            console.log(dataBase)
-        }else{
-            console.log('an error is here')
-        }
-    }
+//     const xmlttp6 = new XMLHttpRequest();
+//     xmlttp6.open('GET', 'https://jsonplaceholder.typicode.com/users');
+//     xmlttp6.send();
+//     xmlttp6.responseType = 'json';
+//     xmlttp6.onload = () =>{
+//         if(xmlttp6.readyState == 4 && xmlttp6.status == 200){
+//             const dataBase = xmlttp6.response;
+//             console.log(dataBase)
+//         }else{
+//             console.log('an error is here')
+//         }
+//     }
 
-}
-request4();
-
-
+// }
+// request4();
 
 
+// fetch and xmlhttprequest 
 
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
+// xhr.send();
+// xhr.responseType = 'json';
+// xhr.onload = () =>{
+//     if(xhr.readyState === 4 && xhr.status == 200){
+//         const data = xhr.response;
+//         console.log(data)
+//     }else{
+//         console.log('new error')
+//     }
+// }
+
+
+// fetch
+
+
+fetch('https://jsonplaceholder.typicode.com/user').then(res => res.json()).then(res => console.log(res))
+.catch(err => console.error(err, 'an error here'))
 
 
 
