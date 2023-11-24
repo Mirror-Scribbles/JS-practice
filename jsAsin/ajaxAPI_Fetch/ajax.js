@@ -120,6 +120,8 @@
 
 // fetch and xmlhttprequest 
 
+// (() => { 
+
 // const xhr = new XMLHttpRequest();
 // xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
 // xhr.send();
@@ -132,13 +134,46 @@
 //         console.log('new error')
 //     }
 // }
+// })();
+
+// other
+
+(() =>{
+   const xhr2 = new XMLHttpRequest();
+   const $xhr = document.getElementById('xmr'),
+$fragment = document.createDocumentFragment();
+xhr2.addEventListener('readystatechange', (e) =>{
+  if(  xhr2.readyState !== 4) return; 
+
+  if(xhr2.status >= 200 && xhr2.status < 300){
+    console.log('success')
+    // $xhr.innerHTML = xhr2.responseText;
+    // console.log(xhr2.responseText);
+    let json = JSON.parse(xhr2.responseText)
+    console.log(json)
+    json.forEach((el) => {
+    const $li = document.createElement('li')
+    $li.innerHTML = `${el.name} --${el.phone} --${el.email}`;
+    $fragment.appendChild($li);
+    });
+    $xhr.appendChild($fragment)
+  }else{
+    console.log('error')
+  }
+})
+
+
+xhr2.open('GET', 'https://jsonplaceholder.typicode.com/users');
+xhr2.send();
+})();
+
 
 
 // fetch
 
 
-fetch('https://jsonplaceholder.typicode.com/user').then(res => res.json()).then(res => console.log(res))
-.catch(err => console.error(err, 'an error here'))
+// fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => console.log(res))
+// .catch(err => console.error(err, 'an error here'))
 
 
 
