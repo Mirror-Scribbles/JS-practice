@@ -98,72 +98,82 @@
 
 // other
 
-(() =>{
-  const xhr2 = new XMLHttpRequest();
-  const $xhr = document.getElementById('xhr'),
-$fragment = document.createDocumentFragment();
-xhr2.addEventListener('readystatechange', (e) =>{
-  if(  xhr2.readyState !== 4) return; 
-  if(xhr2.status >= 200 && xhr2.status < 300){
-    console.log('success');
-    // $xhr.innerHTML = xhr2.responseText;
-    // console.log(xhr2.responseText);
-    const json = JSON.parse(xhr2.responseText);
-  console.log(json);
-    json.forEach((el) => {
-    const $li = document.createElement('li');
-    $li.innerHTML = `${el.name} --${el.phone} --${el.email}`;
-  $fragment.appendChild($li);
-    });
-    $xhr.appendChild($fragment);
-  }else{
-    console.log('error')
-    let message = xhr2.statusText || 'an error has happened';
-    $xhr.innerHTML = `${xhr2.status} ${message}`;
-  }
-})
+// (() =>{
+//   const xhr2 = new XMLHttpRequest();
+//   const $xhr = document.getElementById('xhr'),
+// $fragment = document.createDocumentFragment();
+// xhr2.addEventListener('readystatechange', (e) =>{
+//   if(  xhr2.readyState !== 4) return; 
+//   if(xhr2.status >= 200 && xhr2.status < 300){
+//     console.log('success');
+//     // $xhr.innerHTML = xhr2.responseText;
+//     // console.log(xhr2.responseText);
+//     const json = JSON.parse(xhr2.responseText);
+//   console.log(json);
+//     json.forEach((el) => {
+//     const $li = document.createElement('li');
+//     $li.innerHTML = `${el.name} --${el.phone} --${el.email}`;
+//   $fragment.appendChild($li);
+//     });
+//     $xhr.appendChild($fragment);
+//   }else{
+//     console.log('error')
+//     let message = xhr2.statusText || 'an error has happened';
+//     $xhr.innerHTML = `${xhr2.status} ${message}`;
+//   }
+// })
 
 
-xhr2.open('GET', 'https://jsonplaceholder.typicode.com/users');
-xhr2.send();
-})();
+// xhr2.open('GET', 'https://jsonplaceholder.typicode.com/users');
+// xhr2.send();
+// })();
+
+
+// (() =>{
+//   const xhr3 = new XMLHttpRequest();
+//   const $xhrOl = document.getElementById('xmr3'), $fragment1 = document.createDocumentFragment();
+// xhr3.addEventListener('readystatechange', (e) =>{
+//   if(xhr3.readyState !== 4) return;
+//   if(xhr3.status >= 200 && xhr3.status < 300){
+
+//     const json = JSON.parse(xhr3.responseText)
+//     json.forEach(item => {
+//       const $li3 = document.createElement('li');
+//       $li3.innerHTML = `${item.name}, - ${item.email}` 
+//       $fragment1.appendChild($li3)
+//         });
+//         $xhrOl.appendChild($fragment1);
+//   }else{
+//     let messageError = xhr3.statusText || ` new error getting the data ready, check the URL`
+//     $xhrOl.innerHTML = `${xhr3.status}, ${messageError}`
+//   }
+// })
 
 
 
-(() =>{
-  const xhr3 = new XMLHttpRequest();
-  const $xhrOl = document.getElementById('xmr3'), $fragment1 = document.createDocumentFragment();
-xhr3.addEventListener('readystatechange', (e) =>{
-  if(xhr3.readyState !== 4) return;
-  if(xhr3.status >= 200 && xhr3.status < 300){
-
-    const json = JSON.parse(xhr3.responseText)
-    json.forEach(item => {
-      const $li3 = document.createElement('li');
-      $li3.innerHTML = `${item.name}, - ${item.email}` 
-      $fragment1.appendChild($li3)
-        });
-        $xhrOl.appendChild($fragment1);
-  }else{
-    let messageError = xhr3.statusText || ` new error getting the data ready, check the URL`
-    $xhrOl.innerHTML = `${xhr3.status}, ${messageError}`
-  }
-})
-
-
-
-  xhr3.open('GET', 'https://jsonplaceholder.typicode.com/user')
-  xhr3.send();
-})();
+//   xhr3.open('GET', 'https://jsonplaceholder.typicode.com/user')
+//   xhr3.send();
+// })();
 
 // fetch
-
 
 // fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => console.log(res))
 // .catch(err => console.error(err, 'an error here'))
 
+(()=>{
+const xhttp = new XMLHttpRequest();
+xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users');
+xhttp.send()
+console.log(xhttp)
+xhttp.responseType = 'json'
 
+xhttp.addEventListener('readystatechange', (e)=> { 
+if(xhttp.readyState == 4 &&  xhttp.status == 200){
+const dateUser = xhttp.response;
+console.log(dateUser)
+}else{
+  return;
 
-
-
-
+}
+})
+})();
