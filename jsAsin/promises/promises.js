@@ -46,7 +46,6 @@ const promiseFuntion = () => {
         }
     })
 }
-
 promiseFuntion()
 .then((result) => {
     console.log(result)

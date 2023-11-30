@@ -160,20 +160,19 @@
 // fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => console.log(res))
 // .catch(err => console.error(err, 'an error here'))
 
-(()=>{
-const xhttp = new XMLHttpRequest();
-xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users');
-xhttp.send()
-console.log(xhttp)
-xhttp.responseType = 'json'
+// (()=>{
+// const xhttp = new XMLHttpRequest();
+// xhttp.open('GET', 'https://jsonplaceholder.typicode.com/users');
+// xhttp.send()
+// console.log(xhttp)
+// xhttp.responseType = 'json'
 
-xhttp.addEventListener('readystatechange', (e)=> { 
-if(xhttp.readyState == 4 &&  xhttp.status == 200){
-const dateUser = xhttp.response;
-console.log(dateUser)
-}else{
-  return;
-
-}
-})
-})();
+// xhttp.addEventListener('readystatechange', (e)=> { 
+// if(xhttp.readyState == 4 &&  xhttp.status == 200){
+// const dateUser = xhttp.response;
+// console.log(dateUser)
+// }else{
+//   return;
+// }
+// })
+// })(); failed 
