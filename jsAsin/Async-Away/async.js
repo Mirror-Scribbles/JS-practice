@@ -40,16 +40,20 @@
 
 // reference : https://www.youtube.com/watch?v=iqtpnzXVmsk
 
-async function fetchPokeAPI1(){
-    const pokeIPA = fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-}
-
-
+async function fetchPokeAPI1() {
+    try {
+        const pokeIPA = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+        const jsonData = await pokeIPA.json() 
+        console.log(jsonData)
+    } catch (error) {
+        console.log('error in the a AIP');
+    }
+}fetchPokeAPI1()
 
 const fetchPokeAPI2 = async () =>{
     try {
-        const pokeIPA = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-        const pokeData = await pokeIPA.json()
+        const pokeIPA = await  fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+        const pokeData =  await pokeIPA.json()
         console.log(pokeData);
     } catch {
         console.log(err)
@@ -59,3 +63,19 @@ fetchPokeAPI2();
 
 
 
+const placeHolderAsyncAwait = async () => {
+try {
+    const datafetch = await fetch('https://jsonplaceholder.typicode.com/users')
+    const jsonData =  await datafetch.json()
+    console.log(jsonData)
+} catch (error) {
+    console.log('no file as been found in your local storage')
+}
+}
+placeHolderAsyncAwait();
+
+(() => {
+const promise = fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+.then(promise => promise.json())
+.then(json => console.log(json))
+})();
