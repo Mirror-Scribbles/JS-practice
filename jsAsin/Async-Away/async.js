@@ -61,7 +61,7 @@ const fetchPokeAPI2 = async () =>{
 }
 fetchPokeAPI2();
 
-
+// https://www.youtube.com/watch?v=rKK1q7nFt7M
 
 const placeHolderAsyncAwait = async () => {
 try {
