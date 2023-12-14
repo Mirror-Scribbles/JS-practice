@@ -28,7 +28,7 @@
 //     .catch((err) => {
 //         console.log(err)
 //         let message = err.statusText || 'there is an error'; 
-//         fetch.innerHTML = `Error ${err.status}: ${message}`;
+//         $fetch.innerHTML = `Error ${err.status}: ${message}`;
 //     })
 //     .finally(() =>{
 //         console.log('This is the end of the code')
