@@ -1,0 +1,63 @@
+{
+    "kids Next door":[
+        {
+            "id": 0,
+            "name": "Abigail Abby Lincoln",
+            "nickName": 5,
+            "sector": "V"
+        },
+        {
+            "id": 1,
+            "name": "Nigel Uno",
+            "nickName": 1,
+            "sector": "V"
+        },
+        {
+            "id": 2,
+            "name": "Hogarth[1] Hoagie Pennywhistle[2] Gilligan Jr.",
+            "nickName":2,
+            "sector": "V"
+        }, 
+        {
+            "id": 3,
+            "name": "Kuki Sanban",
+            "nickName":3,
+            "sector": "V" 
+        },
+        {
+            "id": 4,
+            "name": "Wallabee Beetles",
+            "nickName": 4,
+            "sector": "V"
+        },
+        {
+            "id": 5,
+            "name": "Abigail Abby Lincoln",
+            "nickName": 5,
+            "sector": "V"
+        }
+    ],
+
+    "Adults":[
+        {
+            "id":"1",
+            "name": "Benedict Father Wigglestein[1]",
+            "nickname":"Father"
+        },
+        {
+            "id":"2",
+            "name": "top secret",
+            "nickname":"Common Cold"
+        },
+        {
+            "id":"3",
+            "name": " Lou Pottingsworth III",
+            "nickname":"Toiletnator"
+        },
+        {
+            "id":"4",
+            "name": "Mr. John Wink and Mr. Timothy Fibb",
+            "nickname":"Mr. Wink and Mr. Fibb"
+        }
+    ]
+}
