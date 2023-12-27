@@ -2,9 +2,9 @@
   "kids-next-door": [
     {
       "id": 0,
-      "name": "Abigail Abby Lincoln",
+      "name": "Monty Uno",
       "nickName": 0,
-      "sector": "V"
+      "sector": "unknow"
     },
     {
       "id": 1,
@@ -41,6 +41,24 @@
       "name": "Bradley the Skunk",
       "nickname": 6,
       "sector": "v"
+    },
+    {
+      "id": 7,
+      "name": "Flairgripick",
+      "nickName": 7,
+      "sector": "v"
+    },
+    {
+      "id": 8,
+      "name": "Carson P. Uno",
+      "nickName": 8,
+      "sector": "v"
+    },
+    {
+      "name": "Maurice",
+      "nickName": 9,
+      "sector": "Sector V (formerly)",
+      "id": 9
     }
   ],
   "Adults": [
