@@ -1,0 +1,15 @@
+*{box-sizing: border-box;}
+
+li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+a.deleteHyper-link{
+
+}
+
+
+.crossed-out{
+text-decoration: line-through;
+}
