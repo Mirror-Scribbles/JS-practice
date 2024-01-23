@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doList.css">
-    <title>Do List!</title>
+    <title>To do list with CSS and JS</title>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Do list with CSS and Js</h1>
-        <form action="">
-            <h2>Pending tasks</h2>
-            <label class="inputNewtasks" for="inputNewtasks">Add new task</label>
-            <input type="text" class="inputNewTask" id="inputNewTask">
-            <button class="btnAddTask">OK</button>
-            <ul class="TaskContainer" id="TaskContainer"></ul>
-            <a href="https://parzibyte.me/blog">By Parzibyte</a>
+<div class="container">
+    <h1> To do list (❁´◡`❁)</h1>
+    <div class="search">
+        <form id="form">
+            <input type="text" placeholder="Add task..." class="form-control">
+    
+            <button class="btn-addTask">Add!😒</button>
         </form>
-    </body>
-    </html>
+    </div>
+    <div id="list-container">
+        <ul class="TaskList">
+
+        </ul>
+    </div>
+    <div class="empty">
+        <p>Hey mate! You don't have any pending task....😢. wanna add some?</p>
+    </div>
+</div>
+    <script src="doList.js"></script>
 </body>
 </html>
