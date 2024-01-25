@@ -1,7 +1,15 @@
+:root{
+    --perfect-color:rgb(14, 1, 1);
+}
+
 *{box-sizing: border-box;}
 
 
 
 .crossed-out{
 text-decoration: line-through;
+}
+
+body{
+    background-color: var(--perfect-color);
 }

@@ -11,7 +11,6 @@ e.preventDefault();
 
     if(text !==''){
         const $li = document.createElement('li');
-        const $p = document.createElement('p');
         $p.textContent = text;
     
         $li.appendChild($p);
@@ -27,7 +26,7 @@ const AddDeleteBtn = () =>{
     const $deleteBtn = document.createElement('button');
     $deleteBtn.textContent = 'X';
     $deleteBtn.className = 'btn-delete';
-    
+
     $deleteBtn.addEventListener('click', (e)=>{
         const item = e.target.parentElement;
         $ul.removeChild(item);

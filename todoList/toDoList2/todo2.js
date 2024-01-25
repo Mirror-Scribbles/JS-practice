@@ -20,8 +20,9 @@ $title.textContent = 'form';
     },2000)
     return
 }if(content !== ''){
-    const $li = document.createElement('li'),
-    $pList = document.createElement('p')
+    const $li = document.createElement('li')
+    $li.classList.add('crossed-out');
+    $pList = document.createElement('p');
     $pList.textContent = content;
     console.log(content)
 

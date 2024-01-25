@@ -1,0 +1,26 @@
+:root{
+    --perfect-color:rgb(0, 0, 0);
+    --second-color:rgb(149, 137, 137);
+    --third-color: rgb(11, 141, 144);
+}
+
+*{box-sizing: border-box;}
+
+
+.liClass{
+    text-decoration: none;
+}
+
+.crossed-out{
+list-style: none;
+text-decoration: line-through;
+}
+
+body{
+color: var(--third-color);
+background-color:var(--perfect-color);
+}
+
+h1{
+    color: var(--third-color); 
+}
