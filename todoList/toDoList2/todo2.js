@@ -20,15 +20,33 @@ $title.textContent = 'form';
     },2000)
     return
 }if(content !== ''){
-    const $li = document.createElement('li')
-    $li.classList.add('crossed-out');
-    $pList = document.createElement('p');
-    $pList.textContent = content;
-    console.log(content)
 
-$li.appendChild($pList)
-$ulTaskList.appendChild($li);
+    const $liContent = (task) => {
+        const liElement = `   
+        <li class="" id="">
+            <p class="" id="">
+                ${task}
+            </p>
+        </li>`
+
+    
+        $ulTaskList.insertAdjacentHTML('beforebegin', liElement);  
+    };
+    $BtnAddNewTaskInput.addEventListener('click', () => {
+        const task = $input.value;
+        if(task) {
+                addTask(task)
+        }
+    }
+    )
+
+    // const $li = document.createElement('li')
+    // $li.classList.add('crossed-out');
+    // $li.textContent = content;
+    // console.log(content)
+
+// $ulTaskList.appendChild($li);
 $input.value = '';
-
 }
-})
+}); 
+$liContent();
