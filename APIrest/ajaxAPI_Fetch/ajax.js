@@ -40,7 +40,7 @@
 
 const $fetch = document.getElementById('Fetch'), $fragment = document.createDocumentFragment();
 (() =>{
-    fetch('https://jsonplaceholder.typicode.com/user').then((res) =>{console.log(res)
+    fetch('https://jsonplaceholder.typicode.com/users').then((res) =>{console.log(res)
     return res.ok ? res.json() : Promise.reject(res)
 }).then((json)=>{
     console.log(json);
