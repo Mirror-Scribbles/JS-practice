@@ -10,7 +10,7 @@ $fetchBtn.addEventListener('click', () =>{
 
             json.forEach(item => {
                 const $li = document.createElement('li');
-                $li.innerHTML = `${item.id}, -- ${item.name}, -- ${item.email}`
+                $li.innerHTML = `${item.name}, -- ${item.email}`
                 $fragment.appendChild($li); 
             });
             $fetchUl.appendChild($fragment);
