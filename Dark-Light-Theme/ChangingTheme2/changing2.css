@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+
+    padding: 20px;
+    text-align: center;
+}
+
+.text{
+    margin: 30px;
+}
+.dark-mode{
+    background-color: rgb(2, 2, 27);
+    color: aliceblue;
+}
