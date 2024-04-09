@@ -1,0 +1,23 @@
+
+*{
+    background-color: rgb(4, 45, 62);
+}
+
+h1{
+    color: rgb(191, 215, 238);
+    text-align: center;
+}
+
+.colum{
+    display: flex;
+    align-content: center;
+    
+}
+
+.love-death-robot{
+
+    background-color: rgb(79, 47, 206);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
