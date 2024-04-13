@@ -1,0 +1,49 @@
+:root{
+    --bg--color: rgb(13, 12, 40);
+--main--bg--Color: rgb(13, 23, 57);
+--main--Color: rgb(43, 41, 56);
+--shadow--color: rgb(37, 36, 66);
+--letter--color: rgb(71, 70, 83);
+}
+
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body{
+    background-color: var(--bg--color);
+}
+
+h1{
+    text-align: center;
+    color: var(--letter--color);
+}
+
+.tag-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.tag-list li{
+padding: 1rem;
+background-color: var(--main--Color);
+border-radius: 0.5rem;
+box-shadow:  0 0.5rem 1rem -0.25rem var(--shadow--color);
+}
+
+.scroller{
+    max-width: 600px;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroller__inner{
+    display: flex;
+    gap: 1rem;
+}
