@@ -2,14 +2,15 @@
     --bg--color: rgb(13, 12, 40);
 --main--bg--Color: rgb(13, 23, 57);
 --main--Color: rgb(43, 41, 56);
---shadow--color: rgb(37, 36, 66);
+--text--color : rgb(43, 75, 103);
+--shadow--color: rgb(0, 0, 0);
 --letter--color: rgb(71, 70, 83);
 }
 
 *{
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -18,7 +19,7 @@ body{
 
 h1{
     text-align: center;
-    color: var(--letter--color);
+    color: var(--text--color);
 }
 
 .tag-list{
@@ -37,13 +38,27 @@ box-shadow:  0 0.5rem 1rem -0.25rem var(--shadow--color);
 
 .scroller{
     max-width: 600px;
-    overflow: hidden;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .scroller__inner{
+    color:var(--text--color);
+    padding-block: 1rem ;
     display: flex;
     gap: 1rem;
+    flex-wrap: nowrap;
 }
+
+.scroller[data-animated='true'] {
+overflow: hidden;
+
+-webkit-mask: linear-gradient(90deg, transparent, white), 90deg, transparent white;
+mask: linear-gradient(90deg, transparent, rgb(255, 253, 253));
+
+}
+
+.scroller[data-animated ='true'] .scroller__inner {
+    flex-wrap: nowrap;
+    }
