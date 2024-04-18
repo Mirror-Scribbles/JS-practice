@@ -4,7 +4,7 @@ window.addEventListener('scroll', ()=>{
 
     const {scrollHeight, clientHeight, scrollTop} = document.documentElement
     
-    scrollTop + clientHeight > scrollHeight - 4 && setTimeout(newContainer, 1000)
+    scrollTop + clientHeight >= scrollHeight - 4 && setTimeout(newContainer, 1000)
 
 })
 
