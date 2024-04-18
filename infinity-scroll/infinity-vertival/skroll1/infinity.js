@@ -10,6 +10,7 @@ window.addEventListener('scroll', ()=>{
 
 const newContainer = ()=> {
     const $NowBox = document.createElement('div')
+    
     $NowBox.className = 'love-death-robot g'
     $container.appendChild($NowBox);
 }
