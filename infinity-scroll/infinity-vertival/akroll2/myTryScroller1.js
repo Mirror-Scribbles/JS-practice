@@ -1,18 +1,18 @@
-const $morpheusDiv = document.querySelector('.morpheus')
+// const $morpheusDiv = document.querySelector('.morpheus')
 
-window.addEventListener('scroll', ()=>{
-    const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
+// window.addEventListener('scroll', ()=>{
+//     const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
 
-    scrollTop + clientHeight >= scrollHeight - 4 && setTimeout(loader, 1000)
-})
+//     scrollTop + clientHeight >= scrollHeight - 4 && setTimeout(loader, 1000)
+// })
 
-const loader = () =>{
-const $KillerMorpheusUl = document.querySelector('.Killer-morpheus');
-const KillerMorpheusContent = Array.from($KillerMorpheusUl.children)
+// const loader = () =>{
+// const $KillerMorpheusUl = document.querySelector('.Killer-morpheus');
+// const KillerMorpheusContent = Array.from($KillerMorpheusUl.children)
 
-KillerMorpheusContent.forEach(item =>{
+// KillerMorpheusContent.forEach(item =>{
 
-    const duplicateNode = item.cloneNode(true)
-    $KillerMorpheusUl.appendChild(duplicateNode)
-})
-}
+//     const duplicateNode = item.cloneNode(true)
+//     $KillerMorpheusUl.appendChild(duplicateNode)
+// })
+// }
