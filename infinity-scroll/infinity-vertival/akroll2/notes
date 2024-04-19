@@ -1,0 +1,13 @@
+<!-- sort out the h1  to the center to get align with the div (x)
+
+work on the spinner since it is a bit broken 
+
+add some css to the spinner
+
+Duplicate the div where we are gonna load the content (x)
+ 
+
+add the data atribute to the div, so we can add class to them in a more easy way.
+
+
+

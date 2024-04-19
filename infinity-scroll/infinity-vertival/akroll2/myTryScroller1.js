@@ -1,4 +1,4 @@
-const $morpheusInner = document.querySelector('.morpheus')
+const $morpheusDiv = document.querySelector('.morpheus')
 
 window.addEventListener('scroll', ()=>{
     const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
@@ -7,7 +7,12 @@ window.addEventListener('scroll', ()=>{
 })
 
 const loader = () =>{
-const newLi = document.createElement('li');
-newLi.classList.add('Killer-joy')
-$morpheusInner.appendChild(newLi);
+const $KillerMorpheusUl = document.querySelector('.Killer-morpheus');
+const KillerMorpheusContent = Array.from($KillerMorpheusUl.children)
+
+KillerMorpheusContent.forEach(item =>{
+
+    const duplicateNode = item.cloneNode(true)
+    $KillerMorpheusUl.appendChild(duplicateNode)
+})
 }
