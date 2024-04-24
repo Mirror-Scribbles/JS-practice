@@ -1,18 +1,27 @@
-// const $morpheusDiv = document.querySelector('.morpheus')
+const $morpheusDiv = document.querySelector('.morpheus')
+const $spinner = document.querySelector('.spinner')
+const $divSpinner = document.querySelector('.div-spinner')
 
-// window.addEventListener('scroll', ()=>{
-//     const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
+window.addEventListener('scroll', ()=>{
+    const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
 
-//     scrollTop + clientHeight >= scrollHeight - 4 && setTimeout(loader, 1000)
-// })
+    scrollTop + clientHeight >= scrollHeight - 4 && setTimeout(loader, 1000);
 
-// const loader = () =>{
-// const $KillerMorpheusUl = document.querySelector('.Killer-morpheus');
-// const KillerMorpheusContent = Array.from($KillerMorpheusUl.children)
+    $spinner.classList.add('.spinner-hidden');
+    $spinner.addEventListener('transitioned', (e)=>{
+        document.body.removeChild($divSpinner)
 
-// KillerMorpheusContent.forEach(item =>{
+        console.log(e)
+    })
+})
 
-//     const duplicateNode = item.cloneNode(true)
-//     $KillerMorpheusUl.appendChild(duplicateNode)
-// })
-// }
+const loader = () =>{
+
+const $KillerMorpheusUl = document.querySelector('.Killer-morpheus');
+const KillerMorpheusContent = Array.from($KillerMorpheusUl.children)
+KillerMorpheusContent.forEach(item =>{
+
+    const duplicateNode = item.cloneNode(true)
+    $KillerMorpheusUl.appendChild(duplicateNode)
+})
+}
