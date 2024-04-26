@@ -19,11 +19,11 @@ window.addEventListener('scroll', ()=>{
                 })
                 }
                 loader();
-        }, 2000)
+        }, 1000)
 
     }if(scrollTop + clientHeight >= scrollHeight - 4){
         $spinner.classList.add('spinner-hidden')
-    }else{
+    }else if(scrollTop + clientHeight < scrollHeight - 4){
         $spinner.classList.remove('spinner-hidden')  
     }
     
