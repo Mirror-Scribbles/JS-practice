@@ -5,9 +5,19 @@ work on the spinner since it is a bit broken
 add some css to the spinner 
 
 Duplicate the div where we are gonna load the content (x)
+
+up button [
+add an opacity and scale
+
+]
  
 
-add the data atribute to the div, so we can add class to them in a more easy way.
+add the data-attribute to the div, so we can add class to them easily
 
+create a button that leads yoy back to th header of the document
 
+save the clonedNote onto localStorage 
 
+add a button that clears what is is onto the localStorage.
+
+add some Bento-grid to the css to make them look a bit fancy
