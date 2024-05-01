@@ -1,6 +1,8 @@
-const $morpheusDiv = document.querySelector('.morpheus')
-const $spinner = document.querySelector('.spinner')
-const $divSpinner = document.querySelector('.div-spinner')
+const $morpheusDiv = document.querySelector('.morpheus');
+const $spinner = document.querySelector('.spinner');
+const $divSpinner = document.querySelector('.div-spinner');
+const $upButton = document.getElementById('up-btn');
+
 
 window.addEventListener('scroll', ()=>{
     const {scrollHeight, clientHeight, scrollTop} = document.documentElement;
@@ -28,3 +30,13 @@ window.addEventListener('scroll', ()=>{
     }
     
 })
+
+document.addEventListener('click', (e) =>{
+    if(e.target == $upButton ||e.target.matches('.icon-bnt-up')){
+    alert('here! JS')
+    }
+    });
+
+    console.log($divSpinner)
+    console.log($morpheusDiv)
+    console.log($upButton)

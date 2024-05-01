@@ -1,5 +1,6 @@
 const $scroller = document.querySelectorAll('.scroller');
 
+
 if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 addAnimation();
 }
@@ -19,3 +20,4 @@ scrollerContent.forEach(item =>{
 })
 })
 }
+
