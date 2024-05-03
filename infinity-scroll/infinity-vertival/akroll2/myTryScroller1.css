@@ -92,13 +92,27 @@ color: rgb(1, 1, 15);
 font-size: 15px;
 }
 
+.hide-scroll{
+cursor: default;
+opacity: 0;
+}
+
+.active-scroll{
+ opacity: .75;
+}
+
 .up-btn:hover{
+cursor: pointer;
 transform: scale(1.2);
 background-color: transparent;
 backdrop-filter: blur(50px);
 opacity: 1;
 }
 
+.hide-scroll:hover{
+    opacity: 0;
+    cursor: default;
+    }
 
 .spinner-hidden{
 opacity: 0;
