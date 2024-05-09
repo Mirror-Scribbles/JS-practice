@@ -25,7 +25,7 @@ window.addEventListener('scroll', ()=>{
                 })
                 }
                 loader();
-        }, 4000) };
+        }, 1000) };
 
      const  yTopUp  = document.documentElement.scrollTop;
     

@@ -29,6 +29,7 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+
 .Killer-List{
 height: 800px;
 width: 800px; 
@@ -78,7 +79,7 @@ text-decoration: none;
     border-radius: 10px;
     background-color: var(--text--color);
     backdrop-filter: blur(30px);
-    border: 1px solid black;
+    border: 1px solid rgb(179, 37, 37);
     position: fixed;
     right: 20px;
     bottom: 40px;
@@ -87,6 +88,14 @@ text-decoration: none;
     transition: transform .2s ease-in-out;
 
 }
+
+.up-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    opacity: 1;
+    }
 .icon-bnt-up{
 color: rgb(1, 1, 15);
 font-size: 15px;
@@ -101,13 +110,7 @@ opacity: 0;
  opacity: .75;
 }
 
-.up-btn:hover{
-cursor: pointer;
-transform: scale(1.2);
-background-color: transparent;
-backdrop-filter: blur(50px);
-opacity: 1;
-}
+
 
 .hide-scroll:hover{
     opacity: 0;
