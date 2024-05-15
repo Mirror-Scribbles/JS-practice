@@ -28,11 +28,12 @@ window.addEventListener('scroll', ()=>{
         }, 1000) };
 
      const  yTopUp  = document.documentElement.scrollTop;
+     let downY = document.documentElement.clientHeight;
     
     if( yTopUp === 0){
         $spinner.classList.add('spinner-hidden')
         $spinner.classList.remove('active-spinner')
-    }else if(yTopUp >= 100 ){
+    }else if(downY > 300 ){
         $spinner.classList.add('active-spinner')
         $spinner.classList.remove('spinner-hidden')
     }
@@ -44,13 +45,11 @@ document.addEventListener('scroll', (e)=>{
     if(y === 0){
      $upButton.classList.add('hide-scroll');
      $upButton.classList.remove('active-scroll');
-    //  console.log('this the hide was change')
-    }else if( scrollHeight > scrollTop + clientHeight ){ 
+     console.log('the up top button was hided')
+    }else{ 
      $upButton.classList.add('active-scroll');
      $upButton.classList.remove('hide-scroll');
-    //  console.log('this the active was change')
-    }else {
-        return
+     console.log('the up top button is shown now')
     }
  });
 

@@ -23,6 +23,8 @@ h1{
     margin-top: 30px;
     text-align: center;
 }
+
+/* div */
 .morpheus{
     margin-top: 30px;
     display: flex;
@@ -52,6 +54,7 @@ background-color: blueviolet;
 text-decoration: none;
 }
 
+/* spinner */
 .div-spinner{
     display: flex;
     justify-content: center;
@@ -69,8 +72,11 @@ text-decoration: none;
     border-bottom-color: transparent;
     transition: opacity 0.75s, visibility 0.75s;
     animation: spinner1 1.2s linear infinite;
-
 }
+
+/* spinner */
+
+/* button */
 
 .up-btn{
     width: 50px;
@@ -79,7 +85,7 @@ text-decoration: none;
     border-radius: 10px;
     background-color: var(--text--color);
     backdrop-filter: blur(30px);
-    border: 1px solid rgb(179, 37, 37);
+    border: 1px solid rgb(78, 11, 11);
     position: fixed;
     right: 20px;
     bottom: 40px;
@@ -96,21 +102,17 @@ text-decoration: none;
     backdrop-filter: blur(50px);
     opacity: 1;
     }
+
 .icon-bnt-up{
 color: rgb(1, 1, 15);
 font-size: 15px;
 }
+/* button */
 
 .hide-scroll{
 cursor: default;
 opacity: 0;
 }
-
-.active-scroll{
- opacity: .75;
-}
-
-
 
 .hide-scroll:hover{
     opacity: 0;
