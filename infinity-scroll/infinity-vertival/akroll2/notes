@@ -8,9 +8,7 @@ Duplicate the div where we are gonna load the content (x)
 
 up button [
 add an opacity and scale
-
 ]
- 
 
 add the data-attribute to the div, so we can add class to them easily
 
