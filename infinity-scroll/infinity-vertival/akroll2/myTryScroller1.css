@@ -74,7 +74,19 @@ text-decoration: none;
     animation: spinner1 1.2s linear infinite;
 }
 
-/* spinner */
+
+.spinner-hidden{
+    opacity: 0;
+    visibility: hidden;
+    }
+    
+    @keyframes spinner1 {
+        to {transform: rotate(360deg);}
+    }
+
+
+
+
 
 /* button */
 
@@ -97,17 +109,19 @@ text-decoration: none;
 
 .up-btn:hover{
     cursor: pointer;
-    transform: scale(1.2);
-    background-color: transparent;
-    backdrop-filter: blur(50px);
-    opacity: 1;
+    transform: scale(1.1);
+    background-color: transparent; 
+    opacity: .75;
     }
 
-.icon-bnt-up{
-color: rgb(1, 1, 15);
+
+    /* icon */
+.icon-bnt-up {
+color: rgb(1, 1, 14);
 font-size: 15px;
+z-index: 50;
 }
-/* button */
+
 
 .hide-scroll{
 cursor: default;
@@ -119,11 +133,3 @@ opacity: 0;
     cursor: default;
     }
 
-.spinner-hidden{
-opacity: 0;
-visibility: hidden;
-}
-
-@keyframes spinner1 {
-    to {transform: rotate(360deg);}
-}

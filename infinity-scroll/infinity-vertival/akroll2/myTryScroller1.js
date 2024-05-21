@@ -25,10 +25,10 @@ window.addEventListener('scroll', ()=>{
                 })
                 }
                 loader();
-        }, 1000) };
+        }, 2000) };
 
-     const  yTopUp  = document.documentElement.scrollTop;
-     let downY = document.documentElement.clientHeight;
+    const  yTopUp  = document.documentElement.scrollTop;
+    let downY = document.documentElement.clientHeight;
     
     if( yTopUp === 0){
         $spinner.classList.add('spinner-hidden')
@@ -43,15 +43,15 @@ window.addEventListener('scroll', ()=>{
 document.addEventListener('scroll', (e)=>{
     let y  = document.documentElement.scrollTop;
     if(y === 0){
-     $upButton.classList.add('hide-scroll');
-     $upButton.classList.remove('active-scroll');
-     console.log('the up top button was hided')
+    $upButton.classList.add('hide-scroll');
+    $upButton.classList.remove('active-scroll');
+    console.log('the up top button was hided')
     }else{ 
-     $upButton.classList.add('active-scroll');
-     $upButton.classList.remove('hide-scroll');
-     console.log('the up top button is shown now')
+    $upButton.classList.add('active-scroll');
+    $upButton.classList.remove('hide-scroll');
+    console.log('the up top button is shown now')
     }
- });
+});
 
 
 document.addEventListener('click', (e) =>{
