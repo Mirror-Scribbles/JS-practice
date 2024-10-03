@@ -7,36 +7,60 @@
 
     <title>To Do List!</title>
 </head>
+
+
 <body>
+
     <div class="container">
-        <h1>To do List!</h1>
-        <div class="div-Form-container">
-            <form action="" id="form"">
-                <h2 class="title">form</h2>
-                <input type="text" placeholder="Add task...😒" class="input-form">
-                <button class="Add-ListTask">add.</button>
-            </form>
 
-            <div class="List-container">
-                <ul class="task-List">
+        <header>   
 
-                    <li class="lik"></li>
+        <h1>Create your todo-List!</h1>
+            
+            <form action="" id="task-form" class="task-form">
+
+            <input type="text" placeholder="Add new task..." class="input-form">
+
+            <button type="submit" class="Add-ListTask">add task</button>
+
+            <select name="" id="">
+                <option value="All">All</option>
+                <option value="pending">Pending</option>
+                <option value="complete">complete</option>
+            </select>
+
+        </form> 
+    
+    </header>
+
+
+
+        <main class="div-Form-container">
+
+            <section class="task-List">
+
+                <ul class="task-ul">
+
+                    <li class="link">test</li>
+                    <li class="link">test</li>
                     <!-- <li class="" id="">
                         <p class="" id="">
                             Content!
                         </p>
                     </li> -->
-
-                    <li>
-                        <p>Hello World!</p>
-                    </li>
                 </ul>
-            </div>
-        </div>
+            </section>
+        </main>
+
+
+
 <div class="empty">
     <p>There is no any pending tasks for the moment, wanna add some'?😢</p>
 </div>
+
     </div>
+
+
     <script src="todo2.js"></script>
 </body>
 </html>

@@ -19,8 +19,10 @@ e.preventDefault();
     
         $input.value ='';
         $EmptyDiv.style.display = 'none';
-    }
+    };
+    
 });
+
 
 const AddDeleteBtn = () =>{
     const $deleteBtn = document.createElement('button');

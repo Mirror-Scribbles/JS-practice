@@ -2,9 +2,139 @@
     --perfect-color:rgb(0, 0, 0);
     --second-color:rgb(149, 137, 137);
     --third-color: rgb(11, 141, 144);
+    --lightgreen : #00c78a;
+    --orange: #ff9c27;
+    --bg:#162719;
+    --primaryText: #d1d1a1;
 }
 
-*{box-sizing: border-box;}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 100vh;
+    background: #f2e8cf;
+    /* justify-content: center; */
+
+}
+
+header{
+padding: 2rem 1rem;
+max-width: 700px;
+width: 100%;
+margin:  0 auto;
+}
+
+header > h1{
+font-size: 2.5rem;
+font-weight: 400;
+color: var(--primaryText);
+margin-bottom: 1.5rem;
+}
+
+.task-form{
+    display: flex;
+}
+
+input,
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+.input-form{
+
+flex: 1 1 0%;
+
+
+background-color: var(--bg);
+padding: 1rem;
+border: 1px solid var(--primaryText);
+border-radius: 1rem;
+margin-right: 1rem;
+color: var(--primaryText);
+font-size: 1.25rem;
+
+&::placeholder{
+    color: var(--primaryText);
+}
+}
+
+.Add-ListTask
+{
+
+    color: var(--primaryText);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid var(--primaryText);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.Add-ListTask:active{
+    opacity: 0.6;
+}
+
+.container{
+    flex: 1 1 0%;
+
+    background: var(--bg);
+    min-width: 750px;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.task-List{
+
+    padding: 1rem;
+}
+
+.task-ul,
+li
+{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+    background-color: var(--bg);
+    border: 1px solid var(--orange);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+
 
 
 .liClass{
@@ -13,13 +143,4 @@
 
 .crossed-out{
 list-style: none;
-}
-
-body{
-color: var(--third-color);
-background-color:var(--perfect-color);
-}
-
-h1{
-    color: var(--third-color); 
 }

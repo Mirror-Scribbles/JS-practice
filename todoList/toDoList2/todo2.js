@@ -19,6 +19,7 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
             $title.textContent = 'Form';
         },2000)
     };
+    
     if(value){
         const $liContent = document.createElement('li'),
         $pContent = document.createElement('p');
