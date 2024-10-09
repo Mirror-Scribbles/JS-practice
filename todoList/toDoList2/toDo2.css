@@ -25,9 +25,16 @@ body{
 
 }
 
+
+
+
+
+/* header styles */
+
+
 header{
 padding: 2rem 1rem;
-max-width: 700px;
+max-width:700px;
 width: 100%;
 margin:  0 auto;
 }
@@ -39,8 +46,16 @@ color: var(--primaryText);
 margin-bottom: 1.5rem;
 }
 
+
+
+
+
+/* form styles this group */
+
 .task-form{
     display: flex;
+    justify-content: space-around;
+    border: solid 1px red;
 }
 
 input,
@@ -64,10 +79,16 @@ border-radius: 1rem;
 margin-right: 1rem;
 color: var(--primaryText);
 font-size: 1.25rem;
+transition: 0.4s;
 
 &::placeholder{
     color: var(--primaryText);
 }
+
+&:hover{
+    opacity: 0.6;
+}
+
 }
 
 .Add-ListTask
@@ -102,6 +123,13 @@ font-size: 1.25rem;
 
 }
 
+
+
+
+
+
+/* main ul li styles this group*/
+
 main{
     flex: 1 1 0%;
     max-width: 700px;
@@ -110,12 +138,35 @@ main{
 }
 
 
+/* section styles  */
+
+
 .task-List{
 
     padding: 1rem;
 }
 
-.task-ul,
+
+/* ul styles */
+
+
+.task-ul{
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    background-color: var(--bg);
+
+    border: 1px solid var(--orange);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
 li
 {
     display: flex;
@@ -123,9 +174,8 @@ li
 
 
 
-
-
     background-color: var(--bg);
+    color: var(--orange);
     border: 1px solid var(--orange);
     padding: 1rem;
     border-radius: 1rem;
@@ -136,6 +186,7 @@ li
 
 
 
+/* li styles */
 
 .liClass{
     text-decoration: none;

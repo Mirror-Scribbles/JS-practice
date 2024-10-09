@@ -7,18 +7,24 @@ const $title = document.querySelector('.title');
 
 const $newLi = document.querySelector('lik');
 
+
+
 $BtnAddNewTaskInput.addEventListener('click', (event) =>{
     event.preventDefault();
     // console.log(event)
 
     const value = $input.value;
+
     if(!value.trim()){
         $title.textContent = 'Empty form content!';
 
         setTimeout(()=>{
+
             $title.textContent = 'Form';
+
         },2000)
     };
+    
     
     if(value){
         const $liContent = document.createElement('li'),
@@ -36,6 +42,8 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
 
     }
 })
+
+// the delete x 
 
 const deleteButton = () =>{
     const $deleteBtn = document.createElement('button');
@@ -56,13 +64,3 @@ const deleteButton = () =>{
 };
 
 
-
-// if(!content.trim()){
-//     console.log('form no valid')
-//     $title.textContent = 'Empty form!';
-    
-//     setTimeout( () =>{
-// $title.textContent = 'form';
-//     },2000)
-//     return
-// }if(content !== ''){};
