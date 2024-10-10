@@ -15,6 +15,7 @@
 }
 
 
+
 body{
     display: flex;
     flex-direction: column;
@@ -26,9 +27,6 @@ body{
 }
 
 
-
-
-
 /* header styles */
 
 
@@ -38,6 +36,7 @@ max-width:700px;
 width: 100%;
 margin:  0 auto;
 }
+
 
 header > h1{
 font-size: 2.5rem;
@@ -55,11 +54,14 @@ margin-bottom: 1.5rem;
 .task-form{
     display: flex;
     justify-content: space-around;
-    border: solid 1px red;
 }
+
+
 
 input,
 button{
+
+
     appearance: none;
     border: none;
     outline: none;
@@ -91,6 +93,7 @@ transition: 0.4s;
 
 }
 
+
 .Add-ListTask
 {
 
@@ -108,9 +111,11 @@ transition: 0.4s;
     }
 }
 
+
 .Add-ListTask:active{
     opacity: 0.6;
 }
+
 
 .container{
     flex: 1 1 0%;
@@ -122,9 +127,6 @@ transition: 0.4s;
     border-radius: 1rem;
 
 }
-
-
-
 
 
 
@@ -151,7 +153,7 @@ main{
 
 
 .task-ul{
-
+/* 
     display: flex;
     flex-direction: column;
 
@@ -163,15 +165,16 @@ main{
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 1rem; */
 
 }
+
+
 
 li
 {
     display: flex;
     flex-direction: column;
-
 
 
     background-color: var(--bg);
@@ -183,7 +186,6 @@ li
     margin-top: 1rem;
 
 }
-
 
 
 /* li styles */

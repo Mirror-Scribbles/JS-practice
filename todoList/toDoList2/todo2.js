@@ -1,12 +1,14 @@
+
+
 const $input = document.querySelector('.input-form'),
 $BtnAddNewTaskInput = document.querySelector('.Add-ListTask'),
-$ulTaskList = document.querySelector('.task-List'),
 $EmptyDivList = document.querySelector('.empty');
 
 const $title = document.querySelector('.title');
 
-const $newLi = document.querySelector('lik');
+const $newLi = document.querySelector('.lik');
 
+const $ulList = document.querySelector('.task-ul')
 
 
 $BtnAddNewTaskInput.addEventListener('click', (event) =>{
@@ -25,39 +27,49 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
         },2000)
     };
     
-    
     if(value){
-        const $liContent = document.createElement('li'),
-        $pContent = document.createElement('p');
+
+        const $liContent = document.createElement('li');
         $EmptyDivList.style.display = 'none'
 
 
-
-        $pContent.innerHTML = value;
-        $liContent.appendChild($pContent);
+        $liContent.innerText = value;
+        $ulList.appendChild($liContent);
         $liContent.appendChild(deleteButton());
         $ulTaskList.appendChild($liContent);
 
-        $input.value = '';
+   
 
     }
+
+    $input.value = '';
+
 })
+
+
+
+
+
 
 // the delete x 
 
 const deleteButton = () =>{
+
     const $deleteBtn = document.createElement('button');
     $deleteBtn.textContent = 'X';
 
     $deleteBtn.addEventListener('click', (e)=>{
+
         const item = e.target.parentElement;
-        $ulTaskList.removeChild(item);
+         $ulList.removeChild(item);
 
         const items = document.querySelectorAll('li');
 
         if (items.length === 0){
+            
             $EmptyDivList.style.display = 'block'
         }
+
     });
 
     return $deleteBtn;
