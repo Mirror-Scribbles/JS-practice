@@ -18,6 +18,7 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
     const value = $input.value;
 
     if(!value.trim()){
+
         $title.textContent = 'Empty form content!';
 
         setTimeout(()=>{
@@ -30,15 +31,14 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
     if(value){
 
         const $liContent = document.createElement('li');
+
         $EmptyDivList.style.display = 'none'
 
-
         $liContent.innerText = value;
-        $ulList.appendChild($liContent);
-        $liContent.appendChild(deleteButton());
-        $ulTaskList.appendChild($liContent);
 
-   
+        $ulList.appendChild($liContent);
+
+        $liContent.appendChild(deleteButton());
 
     }
 

@@ -1,7 +1,14 @@
  link : https://javascript.plainenglish.io/how-to-create-a-todo-list-using-javascript-5e126a93483
 
+
+
+
  1 add the notes to a local storage so the notes wont goi away once the window page is refresh.
 
  2 add the crossed out styles to the button once the task is finished.
 
 3 add some styles to the the select button and add the tasks to its correct option to the select
+
+4 STYLES TO THE UL SECTION AND li section
+
+5 
