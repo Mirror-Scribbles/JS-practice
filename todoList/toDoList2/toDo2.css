@@ -5,13 +5,14 @@
     --lightgreen : #00c78a;
     --orange: #ff9c27;
     --bg:#162719;
-    --primaryText: #d1d1a1;
+    --primaryText: #b1b192;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 
@@ -44,7 +45,6 @@ font-weight: 400;
 color: var(--primaryText);
 margin-bottom: 1.5rem;
 }
-
 
 
 
@@ -153,8 +153,8 @@ main{
 
 
 .task-ul{
-/* 
-    display: flex;
+
+    /* display: flex;
     flex-direction: column;
 
 
@@ -169,12 +169,17 @@ main{
 
 }
 
+/* li styles  */
 
 
-li
+.li-cons
 {
-    display: flex;
-    flex-direction: column;
+
+    
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    list-style: none;    
 
 
     background-color: var(--bg);
@@ -187,13 +192,24 @@ li
 
 }
 
+i{
 
-/* li styles */
+float: right;
 
-.liClass{
-    text-decoration: none;
 }
 
-.crossed-out{
-list-style: none;
-}
+/* i{
+position: absolute;
+display: flex;
+gap: 30px;
+left: 90%;
+
+
+font-size: 15px;
+background: transparent;
+color: var(--lightgreen);
+padding: 3px;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+
+} */

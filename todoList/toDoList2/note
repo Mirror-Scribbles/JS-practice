@@ -1,6 +1,8 @@
  link : https://javascript.plainenglish.io/how-to-create-a-todo-list-using-javascript-5e126a93483
 
 
+link 2 ; https://github.com/CodeStudio-Content/To-Do-List-JavaScript/blob/main/index.html
+
 
 
  1 add the notes to a local storage so the notes wont goi away once the window page is refresh.
