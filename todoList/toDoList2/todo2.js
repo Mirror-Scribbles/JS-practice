@@ -1,50 +1,185 @@
 
 
-const $input = document.querySelector('.input-form'),
-$BtnAddNewTaskInput = document.querySelector('.Add-ListTask'),
-$EmptyDivList = document.querySelector('.empty');
+// variables 
 
-const $title = document.querySelector('.title');
-
-const $newLi = document.querySelector('.lik');
-
-const $ulList = document.querySelector('.task-ul')
+let tasks = [];
 
 
-$BtnAddNewTaskInput.addEventListener('click', (event) =>{
-    event.preventDefault();
-    // console.log(event)
+const $inputTask = document.querySelector('.input-task');
 
-    const value = $input.value;
 
-    if(!value.trim()){
+const $addTask = document.querySelector('.Add-ListTask');
 
-        $title.textContent = 'Empty form content!';
 
-        setTimeout(()=>{
 
-            $title.textContent = 'Form';
 
-        },2000)
-    };
-    
-    if(value){
 
-        const $liContent = document.createElement('li');
 
-        $EmptyDivList.style.display = 'none'
 
-        $liContent.innerText = value;
 
-        $ulList.appendChild($liContent);
 
-        $liContent.appendChild(deleteButton());
+
+
+// Preventing the input loading the page when submitting the task! 
+$addTask.addEventListener('click', (e) =>{
+    e.preventDefault();
+
+    // addTaskValue();
+
+});
+
+
+
+
+
+
+
+
+
+
+// adding tasks to the input
+
+const itemValue = $inputTask.value.trim();
+
+
+console.log(itemValue)
+
+    if(itemValue) {
+
 
     }
 
-    $input.value = '';
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const $input = document.querySelector('.input-form'),
+// $BtnAddNewTaskInput = document.querySelector('.Add-ListTask'),
+// $EmptyDivList = document.querySelector('.empty');
+
+// const $title = document.querySelector('.title');
+
+// const $newLi = document.querySelector('.lik');
+
+
+
+
+// // events
+
+
+
+
+// $BtnAddNewTaskInput.addEventListener('click', (event) =>{
+//     event.preventDefault();
+//     // console.log(event)
+
+//     const itemValue = $input.value.trim();
+
+//     if(!itemValue){
+
+//         // $title.textContent = 'Empty form content!';
+
+//         // setTimeout(()=>{
+
+//         //     $title.textContent = 'Form';
+
+//         // },2000)
+
+
+//     };
+
+
+
+
+//     if(itemValue){
+
+//         tasks.push({ itemValue: itemValue, completed: false });
+        
+//         $liContent.innerText = itemValue;
+
+//         $ulList.appendChild($liContent);
+
+//         $EmptyDivList.style.display = 'none'
+
+//     }
+
+//     $input.value = '';
+
+//     updateTasksUI()
+
+// })
+
+
+
+// const updateTasksUI = ()=>{
+//     const $ulList = document.querySelector('.task-ul');
+//     $ulList.innerHTML = ''; 
+
+
+
+//     tasks.forEach((task) => {
+        
+//         const ItemListLi = document.createElement('li')
+
+//         ItemListLi.innerHTML = `
+        
+//         `
+//     })
+
+
+// }
 
 
 
@@ -53,26 +188,26 @@ $BtnAddNewTaskInput.addEventListener('click', (event) =>{
 
 // the delete x 
 
-const deleteButton = () =>{
+// const deleteButton = () =>{
 
-    const $deleteBtn = document.createElement('button');
-    $deleteBtn.textContent = 'X';
+//     const $deleteBtn = document.createElement('button');
+//     $deleteBtn.textContent = 'X';
 
-    $deleteBtn.addEventListener('click', (e)=>{
+//     $deleteBtn.addEventListener('click', (e)=>{
 
-        const item = e.target.parentElement;
-         $ulList.removeChild(item);
+//         const item = e.target.parentElement;
+//          $ulList.removeChild(item);
 
-        const items = document.querySelectorAll('li');
+//         const items = document.querySelectorAll('li');
 
-        if (items.length === 0){
+//         if (items.length === 0){
             
-            $EmptyDivList.style.display = 'block'
-        }
+//             $EmptyDivList.style.display = 'block'
+//         }
 
-    });
+//     });
 
-    return $deleteBtn;
-};
+//     return $deleteBtn;
+// };
 
 
