@@ -7,47 +7,67 @@ let tasks = [];
 
 const $inputTask = document.querySelector('.input-task');
 
-
 const $addTask = document.querySelector('.Add-ListTask');
-
-
-
-
-
-
-
-
-
-
-
-// Preventing the input loading the page when submitting the task! 
-$addTask.addEventListener('click', (e) =>{
-    e.preventDefault();
-
-    // addTaskValue();
-
-});
-
-
-
-
-
-
-
 
 
 
 // adding tasks to the input
 
-const itemValue = $inputTask.value.trim();
+const addTaskValue = () => {
 
+    const itemValue = $inputTask.value.trim();
 
-console.log(itemValue)
+    console.log(itemValue)
 
     if(itemValue) {
 
+        tasks.push({text: text});
+        $inputTask.value = '';
+
+        updateUI();
 
     }
+
+};
+
+const updateUI = () => {
+
+    const $listUl = document.querySelector('.task-ul')
+
+    $listUl.innerHTML = '';
+
+
+  tasks.forEach ( task =>{
+    const listItem = document.createElement('.li')
+
+    listItem.innerHTML 
+    
+    `
+                        <li class="li-cons"> 
+
+                        <i class="fa-solid fa-check" ></i>
+
+                        <i class="fa-solid fa-trash-can"></i> 
+    `
+  });
+
+listItem.addEventListener('change', () => toggle)
+};
+
+
+
+// Preventing the input loading the page when submitting the task! 
+
+$addTask.addEventListener('click', (e) =>{
+    e.preventDefault();
+
+
+
+    addTaskValue();
+});
+
+
+
 
 
 
