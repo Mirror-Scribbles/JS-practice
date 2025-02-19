@@ -1,20 +1,64 @@
-const $clock = document.querySelector('.clockFirst');
-
 const $activeBtn = document.querySelector('.turn-on');
 
-const $stop = document.querySelector('.turn-off');
+const $stopClock = document.querySelector('.turn-off');
 
-const dateTime = () =>{
+
+    let clockInter;
+
+
+
+function digitalClock (){
+
+const NewDate = new Date();
+console.log(NewDate);
+
+ let mill =  NewDate.getMilliseconds()
+ console.log(mill)
+
+ let min = NewDate.getMinutes()
+ console.log(min)
+
+ let hur = NewDate.getHours()
+ console.log(hur)
+
+ let day = NewDate.getDay()
+ console.log(day)
+
+ let year = NewDate.getFullYear()
+
+ console.log(year)
+
+
+
+
+
+
+
+
+    $activeBtn.addEventListener('click', () => {
+
+        clockInter = setInterval(() => {
+
+            let $date = new Date().toLocaleTimeString();
     
-    let interval = setInterval(() => {
+            const $clock = document.querySelector('.clockFirst').innerHTML = `<h3> ${$date} </h3>`;
+            console.log($date);
+    
+        },1000);
+    
+    
+        $activeBtn.disabled = true;
+    
+    // $activeBtn.addEventListener('click', dateTime);
+    
+    })
 
-        let $date = new Date().toLocaleTimeString();
-        const $clock = document.querySelector('.clockFirst').innerHTML = `<h3>${$date}</h3>`;
-        console.log($date)
-    },1000)
+    $stopClock.addEventListener('click', () => {
 
-    $activeBtn.disabled = true;
+        clearInterval(clockInter);
 
-    $stop.addEventListener('click', )
-};
-$activeBtn.addEventListener('click', dateTime);
+        $activeBtn.disabled = false;
+    
+    })
+}
+digitalClock();
