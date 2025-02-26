@@ -1,64 +1,68 @@
-const $activeBtn = document.querySelector('.turn-on');
 
-const $stopClock = document.querySelector('.turn-off');
+const $btnOn = document.querySelector('.turn-on');
 
+const $btnOff = document.querySelector('.turn-off');
 
-    let clockInter;
+let stopInterval;
 
+function dayTime() {
 
-
-function digitalClock (){
-
-const NewDate = new Date();
-console.log(NewDate);
-
- let mill =  NewDate.getMilliseconds()
- console.log(mill)
-
- let min = NewDate.getMinutes()
- console.log(min)
-
- let hur = NewDate.getHours()
- console.log(hur)
-
- let day = NewDate.getDay()
- console.log(day)
-
- let year = NewDate.getFullYear()
-
- console.log(year)
-
-
-
-
-
-
-
-
-    $activeBtn.addEventListener('click', () => {
-
-        clockInter = setInterval(() => {
-
-            let $date = new Date().toLocaleTimeString();
+    let date = new Date();
     
-            const $clock = document.querySelector('.clockFirst').innerHTML = `<h3> ${$date} </h3>`;
-            console.log($date);
-    
-        },1000);
-    
-    
-        $activeBtn.disabled = true;
-    
-    // $activeBtn.addEventListener('click', dateTime);
-    
-    })
+    let hh = date.getHours();
 
-    $stopClock.addEventListener('click', () => {
+    let mm = date.getMinutes();
 
-        clearInterval(clockInter);
+    let ss = date.getSeconds();
 
-        $activeBtn.disabled = false;
+    let am;
+
+    hh = (hh < 10) ? '0' + hh : hh;
+
+    mm = (mm < 10) ? '0' + mm : mm;
+
+    ss = (ss < 10) ? '0' + ss : ss; 
+
+
+    am = ( hh > 12) ? 'PM' : 'AM';
     
-    })
-}
-digitalClock();
+    let time = ` ${hh} :  ${mm} : ${ss} ${am}`;
+
+    let $TimeZone = document.querySelector('.clockSecond');
+
+    $TimeZone.textContent = time;
+
+
+
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+let curWeekDay = days[date.getDay()];
+let curDay = date.getDate();
+let curMonth = months[date.getMonth()];
+let curYear = date.getFullYear();
+let  DateZone = `${curWeekDay} / ${curDay} / ${curMonth} / ${curYear}`;
+
+const $clock2 = document.querySelector('.clockFirst');
+
+$clock2.textContent = DateZone;
+};
+
+
+
+
+$btnOn.addEventListener('click', ()=> {
+
+stopInterval = setInterval(dayTime, 1000)
+console.log('bnt active,', dayTime)
+
+})
+
+$btnOff.addEventListener('click', ()=> {
+clearInterval(stopInterval)
+console.log('stopping')
+})
+
+
+
+
+
