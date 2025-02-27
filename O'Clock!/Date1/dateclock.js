@@ -23,7 +23,6 @@ function dayTime() {
 
     ss = (ss < 10) ? '0' + ss : ss; 
 
-
     am = ( hh > 12) ? 'PM' : 'AM';
     
     let time = ` ${hh} :  ${mm} : ${ss} ${am}`;
