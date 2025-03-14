@@ -3,6 +3,12 @@ const $btnOn = document.querySelector('.turn-on');
 
 const $btnOff = document.querySelector('.turn-off');
 
+const $btnReset = document.querySelector('.reset-btn');
+
+let $TimeZone = document.querySelector('.clockSecond');
+
+const $clock2 = document.querySelector('.clockFirst');
+
 let stopInterval;
 
 function dayTime() {
@@ -27,8 +33,6 @@ function dayTime() {
     
     let time = ` ${hh} :  ${mm} : ${ss} ${am}`;
 
-    let $TimeZone = document.querySelector('.clockSecond');
-
     $TimeZone.textContent = time;
 
 
@@ -40,8 +44,6 @@ let curDay = date.getDate();
 let curMonth = months[date.getMonth()];
 let curYear = date.getFullYear();
 let  DateZone = `${curWeekDay} / ${curDay} / ${curMonth} / ${curYear}`;
-
-const $clock2 = document.querySelector('.clockFirst');
 
 $clock2.textContent = DateZone;
 };
@@ -62,6 +64,14 @@ console.log('stopping')
 })
 
 
+$btnReset.addEventListener('click', ()=>{
 
+    $TimeZone.innerHTML = `<div class="clockFirst">Thu / 10 / May / 1999</div>`;
+
+
+    $clock2.innerHTML = `<div class="clockSecond"> 08 : 50 : 26 AM
+        </div>`;
+
+});
 
 
