@@ -50,18 +50,17 @@ $clock2.textContent = DateZone;
 
 
 
-
 $btnOn.addEventListener('click', ()=> {
 
 stopInterval = setInterval(dayTime, 1000)
 console.log('bnt active,', dayTime)
 
-})
+});
 
 $btnOff.addEventListener('click', ()=> {
 clearInterval(stopInterval)
 console.log('stopping')
-})
+});
 
 
 $btnReset.addEventListener('click', ()=>{
